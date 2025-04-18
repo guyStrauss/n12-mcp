@@ -32,9 +32,9 @@ This project demonstrates a proof of concept for using the Model Context Protoco
 
 ## Usage
 
-Launch the MCP service by running the server entrypoint:
+Inspect the MCP service by running the server entrypoint:
 ```bash
-uv run server.py
+mcp dev src/server.py
 ```
 This starts the local MCP host on the default port, ready to serve news queries.
 
