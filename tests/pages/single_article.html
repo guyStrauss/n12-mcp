@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<!-- page:hide-template-menu-items /-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="he" />
+	<meta name="viewport" content="width=1024" />
+	<link href="/sites/styles/vgn-ext-templating-delivery.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/sites/scripts/async/ajax.jsp"></script>
+<script>
+
+	function getReferrer(){
+		const d = new Date();
+		d.setTime(d.getTime() + (60 * 1000));
+		const expires = "expires=" + d.toGMTString();
+		const domain = "domain=" + location.host.substring(location.host.indexOf("."));
+		const referrer = "mako_referrer=" + (document.referrer || "empty");
+		document.cookie = referrer + ";" + expires + ";" + domain + ";path=/";
+	}	
+		
+	function getStatsParams(altUrl){
+		var params = '';
+		if (location.search && altUrl.indexOf('mako.')!=-1) {
+		    var parts = location.search.substring(1).split('&');	
+		    for (var i = 0; i < parts.length; i++) {
+		        var nv = parts[i].split('=');
+		        if (nv[0] && (nv[0] == 'sCh' || nv[0] == 'pId' || nv[0].toLowerCase() == 'partner' || nv[0].indexOf('utm') == 0)) {
+		              params += '&' + nv[0] +'='+ nv[1];
+		          }
+		    }
+		    if (params !== ''){
+		    	params = (altUrl.indexOf('?') !== altUrl.indexOf('&') ? '&' : '?') + params.substring(1);
+		    }
+		}
+		return params;
+	}
+		var agent = navigator.userAgent.toLowerCase();
+		var myUrl = window.location.href.toLowerCase();
+		var isSmartPhone = (agent.indexOf('ipad') == -1 && (agent.indexOf('iphone') != -1 || agent.indexOf('android') != -1 ) )
+		if(isSmartPhone){			
+			//var isTvbeeDomain = location.host.indexOf("tvbee.co.il") != -1;
+			var isSateliteDomain = location.host.indexOf("tvbee.co.il") != -1 || location.host.indexOf("www.n12")!= -1 || location.host.indexOf("tech12.co.il") != -1;
+			var altUrl="";
+			if(myUrl.indexOf(".mako") !== -1  || isSateliteDomain)
+			{
+					var mobileHostPrefix = isSateliteDomain ? 'm.' : 'mobile.';
+					var isValidUrl = new RegExp("^(http|https)\://.*$").test(altUrl);
+					if(altUrl.length && isValidUrl && (myUrl.toLowerCase().indexOf(altUrl.toLowerCase()) == -1)){
+						getReferrer();
+						var url=altUrl + getStatsParams(altUrl);
+						window.location=url;						
+					}else{
+						if(myUrl.indexOf("/mako-vod-help")===-1){
+							getReferrer();	
+							window.location = window.location.href.replace(location.host.split('.')[0]+'.', mobileHostPrefix);
+						}												
+					}
+			}
+		}
+		</script>
+<meta name="news_keywords" content="סוריה, אחמד א-שרע, בשאר אל-אסד">
+	<meta name="robots" content="max-image-preview:large">
+	<link rel="canonical" href="https://www.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm" />
+	<link rel="alternate" media="handheld" href="https://mobile.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm" />
+	<link rel="apple-touch-icon" href="https://rcs.mako.co.il/images/favicon/N12/apple-touch-icon.png">
+		<link rel="icon" href="https://rcs.mako.co.il/images/N12favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="https://rcs.mako.co.il/images/favicon/N12/favicon.png" type="image/png">
+		<link rel="icon" sizes="16x16" href="https://rcs.mako.co.il/images/favicon/N12/favicon-16x16.png">
+		<link rel="icon" sizes="32x32" href="https://rcs.mako.co.il/images/favicon/N12/favicon-32x32.png">
+		<link rel="icon" sizes="96x96" href="https://rcs.mako.co.il/images/favicon/N12/favicon-96x96.png">
+		<link rel="icon" sizes="192x192" href="https://rcs.mako.co.il/images/favicon/N12/android-icon-192x192.png">
+	<link rel="alternate" href="android-app://com.channel2.mobile.ui/news12/?link=/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm?utm_source=Google&utm_medium=OrganicSearchResults&utm_campaign=AppIndexing" />
+	<link rel="alternate" href="ios-app://333211486/news12?link=/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm?utm_source=Google&utm_medium=OrganicSearchResults&utm_campaign=AppIndexing" />
+	<link rel="alternate" href="ios-app://340173260/mako/openArticle?url=/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm?utm_source=Google&utm_medium=OrganicSearchResults&utm_campaign=AppIndexing" />
+	<link rel="alternate" href="android-app://com.goldtouch.mako/mako/openArticle?url=/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm?utm_source=Google&utm_medium=OrganicSearchResults&utm_campaign=AppIndexing" />
+	<script type="application/ld+json">
+			{
+ "@context": "https://schema.org",
+ "@type": "NewsArticle",
+ "mainEntityOfPage":  {
+  "@type": "WebPage",
+  "@id": "https://www.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm"
+ },
+ "headline": "בסוריה מתרחש אירוע היסטורי, וישראל לא מנצלת אותו",
+ "description": "עד לפני ארבעה חודשים הפאזל שנקרא סוריה היה נראה בלתי ניתן להרכבה, אלא שהפלת אסד הובילה להזדמנות חסרת תקדים. את הכיסא תפס אדם שמכונה בישראל גם &quot;הג'יהאדיסט בחליפה&quot; – אבל דווקא הוא יכול לחולל מהפך ביחסים | סדר אזורי חדש – המזרח התיכון בעידן של שינוי: איתי אנגל בטור פרשנות מיוחד",
+ "datePublished": "2025-04-17T19:38+0300",
+ "dateModified": "2025-04-18T13:11+0300",
+ "url": "https://www.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm",
+ "alternativeHeadline": "איתי אנגל נזכר במה שהבין על סוריה - אחרי שחברו הוצא להורג",
+ "speakable":  {
+  "@type": "SpeakableSpecification",
+  "xPath":   [
+   "/html/head/title",
+   "/html/head/meta[@name='description']/@content"
+  ]
+ },
+ "isAccessibleForFree": true,
+ "inLanguage": "he",
+ "keywords": "סוריה, אחמד א-שרע, בשאר אל-אסד",
+ "image":  {
+  "@type": "ImageObject",
+  "url": "https://img.mako.co.il/2025/04/15/_syria_B_re.png",
+  "height": 174,
+  "width": 232
+ },
+ "author": [ {
+  "@type": "Person",
+  "name": "איתי אנגל",
+  "url": "https://www.mako.co.il/tv-ilana_dayan/team/Editor-dbcce5ac6131911004.htm"
+ }],
+ "publisher":  {
+  "@type": "NewsMediaOrganization",
+  "name": "N12",
+  "logo":   {
+   "@type": "ImageObject",
+   "url": "https://rcs.mako.co.il/images/header/mako_logo_neo_schema.png",
+   "width": "165",
+   "height": "60"
+  }
+ }
+}</script>
+	<meta property="al:android:package" content="com.goldtouch.mako" />
+		<meta property="al:android:url" content="mako://openArticle?url=/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm?utm_source=AppLinks&utm_medium=ReferalTraffic&utm_campaign=AppLinks" />
+		<meta property="al:android:app_name" content="mako mobile" />
+		<meta property="al:ios:url" content="mako://openArticle?url=/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm?utm_source=AppLinks&utm_medium=ReferalTraffic&utm_campaign=AppLinks" />
+		<meta property="al:ios:app_store_id" content="340173260" />
+		<meta property="al:ios:app_name" content="mako mobile" />
+		<meta property="al:web:url" content="https://www.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm" />
+	<meta name="description" content="אחרי רצח חברו הבין איתי אנגל מה באמת מניע את הג'יהאדיסטים. עכשיו לדעתו ישראל צריכה לקבל החלטה אחת בסוריה. טור פרשנות על הפאזל שנוצר אחרי נפילת אסד" />
+	<title> N12 - איתי אנגל נזכר במה שהבין על סוריה - אחרי שחברו הוצא להורג</title>
+	<meta property="og:title" content=" N12 - איתי אנגל נזכר במה שהבין על סוריה - אחרי שחברו הוצא להורג" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm" />
+	<meta property="og:image" content="https://img.mako.co.il/2025/04/15/_syria_I_autoOrient_i.jpg" />
+	<meta property="og:site_name" content="N12" />
+	<meta property="fb:app_id" content="225736910835244" />
+	<meta property="og:description" content="אחרי רצח חברו הבין איתי אנגל מה באמת מניע את הג'יהאדיסטים. עכשיו לדעתו ישראל צריכה לקבל החלטה אחת בסוריה. טור פרשנות על הפאזל שנוצר אחרי נפילת אסד" />
+	<meta property="fb:pages" content="100462013796" />
+	<meta name="external_title" content="המהפך ההיסטורי בסוריה שישראל צריכה לנצל" />
+	<meta name="twitter:card" content="summary_large_image"/>
+		<meta name="twitter:title" content="המהפך ההיסטורי בסוריה שישראל צריכה לנצל"/>
+		<meta name="twitter:description" content="עד לפני ארבעה חודשים הפאזל שנקרא סוריה היה נראה בלתי ניתן להרכבה, אלא שהפלת אסד הובילה להזדמנות חסרת תקדים. את הכיסא תפס אדם שמכונה בישראל גם &quot;הג'יהאדיסט בחליפה&quot; – אבל דווקא הוא יכול לחולל מהפך ביחסים | סדר אזורי חדש – המזרח התיכון בעידן של שינוי: איתי אנגל בטור פרשנות מיוחד"/>
+		<meta name="twitter:image" content="https://img.mako.co.il/2025/04/15/_syria_I_autoOrient_i.jpg"/>
+		<meta property="article:published_time" content="2025-04-17T19:38:00+0300>"/>
+		<meta property="article:modified_time" content="2025-04-18T13:11:00+0300"/>
+		<meta property="article:section" content="N12"/>
+	<meta property="article:published_time" content="2025-04-17T19:38:00+0300" />
+		<meta property="article:modified_time" content="2025-04-18T13:11:00+0300" />
+		<meta property="article:tag" content="סוריה" />
+				<meta property="article:tag" content="אחמד א-שרע" />
+				<meta property="article:tag" content="בשאר אל-אסד" />
+				<meta property="article:section" content="החדשות" />
+		<meta name="apple-itunes-app"
+			content="app-id=340173260, app-argument=mako://openArticle?url=https://www.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm&utm_source=makoMobile&utm_medium=SmartAppBanner&utm_campaign=makoMobilePromo" />
+		<meta name="google-play-app"
+			content="app-id=com.goldtouch.mako, app-argument=mako://openArticle?url=https://www.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm&utm_source=makoMobile&utm_medium=SmartAppBanner&utm_campaign=makoMobilePromo" />
+		<script type="text/javascript">
+		var adsArea  = 'MAKOAREA=articleins';
+		var contentType = 'articleins';
+		var contentUsername = '';
+		function MAKO_SETTINGS() {
+            return {
+                            'url' : "https://www.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm",
+                            'type' : "article"
+            }
+		}
+	</script>
+	<link rel="image_src" href="https://img.mako.co.il/2025/04/15/_syria_I_autoOrient_i.jpg" />
+	<!-- Menuitem:  / nNews / nArticleNews /   -->
+<!-- google plus 1 -->
+<script>
+	var vcmidOfContent = '9896b09319416910VgnVCM200000650a10acRCRD';
+	var currentChannelId = '6a6d777d11485910VgnVCM200000650a10acRCRD';
+	var mainChannelId = '31750a2610f26110VgnVCM1000005201000aRCRD';
+	var parentsChannels='6a6d777d11485910VgnVCM200000650a10acRCRD,a19b19d0387a5710VgnVCM100000700a10acRCRD,31750a2610f26110VgnVCM1000005201000aRCRD';
+	var isCM8 =  true;
+	var OB_ContextKeyValue = 'n12';
+	var OB_Platform = 'desktop';
+	
+	var domoPageView = '{"content_type":"article","channel_id":"6a6d777d11485910VgnVCM200000650a10acRCRD","channel_depth":2,"item_id":"9896b09319416910VgnVCM200000650a10acRCRD","is_blocked_content":{"israel":0,"international":0},"page_url":"https://www.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm"}';</script>
+<script src="https://rcs.mako.co.il/js/domo/domo-1.0.0.js"></script>
+<script src="https://rcs.mako.co.il/js/scripts/domoBundle.js"></script>
+
+
+<!-- new article -->
+		<link href="https://rcs.mako.co.il/css/news/article/cssBundle.css" rel="stylesheet" /><link href="https://rcs.mako.co.il/css/news/themes/header.css" rel="stylesheet" /><script src="https://rcs.mako.co.il/js/p13n_mako_v7.js"></script>
+		<script src="https://rcs.mako.co.il/js/bannend.js"></script>
+		<script>
+			var staticResourcesUriPrefix = 'https://rcs.mako.co.il';
+			var skinsUriPrefix = 'https://skn.mako.co.il';
+			var imagesUriPrefix = 'https://img.mako.co.il';
+		</script>
+		<script src="https://rcs.mako.co.il/js/mako-article-V2019/preBundle.js"></script>
+		
+		<!-- Vignette Application Portal 16.2 (build 849477) (JAR 16.2.cumulative 2018-06-06 12:54:12 build 866503) -->
+	
+	<!-- IDX script -->
+	<script async src="https://tags.dxmdp.com/tags/36699dd9-d954-4d40-be6a-4bbfce1f3652/dmp-provider.js"></script>
+
+	<!-- header bidding -->
+	<script id="vad-hb-snippet" data-publisher="mako">var _0x2050=['type','head','unshift','document','src','pubads','refresh','//cdn.valuad.cloud/hb/','now','top','random','vad_timestamp','vad-hb-script','push','disableInitialLoad','text/javascript','_vadHb','vad_rollout','appendChild','googletag','cmd','data-publisher','getItem','mako'];(function(_0x2886b3,_0x205089){var _0x484819=function(_0x58ee27){while(--_0x58ee27){_0x2886b3['push'](_0x2886b3['shift']());}};_0x484819(++_0x205089);}(_0x2050,0x10e));var _0x4848=function(_0x2886b3,_0x205089){_0x2886b3=_0x2886b3-0x0;var _0x484819=_0x2050[_0x2886b3];return _0x484819;};(function(){function _0x3568dd(){var _0x30ccc2='mako';window['vadPubId']=_0x30ccc2;var _0x27906d=_0x4848('0x11');var _0x8194e4=_0x4848('0x6');var _0x51c654=Date[_0x4848('0x2')]();var _0x5b82be=window['top'][_0x4848('0x15')]['createElement']('script');_0x5b82be[_0x4848('0x12')]=_0x4848('0x9');_0x5b82be['setAttribute'](_0x4848('0xf'),_0x30ccc2);_0x5b82be['id']=_0x8194e4;_0x5b82be['async']=!![];var _0x3fbf1d=_0x51c654-_0x51c654%(0x15180*0x3e8);var _0x75f0e9=parseInt(localStorage[_0x4848('0x10')](_0x4848('0x5')),0xa)||_0x3fbf1d;_0x5b82be[_0x4848('0x16')]=_0x4848('0x1')+_0x27906d+'-prod.js'+'?timestamp='+(_0x3fbf1d>_0x75f0e9?_0x3fbf1d:_0x75f0e9);window[_0x4848('0x3')]['document'][_0x4848('0x13')][_0x4848('0xc')](_0x5b82be);}function _0x390dd0(){window['googletag']=window[_0x4848('0xd')]||{'cmd':[]};var _0x100c01=window[_0x4848('0xd')];_0x100c01[_0x4848('0xe')]=_0x100c01[_0x4848('0xe')]||[];if(_0x100c01[_0x4848('0xe')]['unshift']){_0x100c01[_0x4848('0xe')][_0x4848('0x14')](function(){_0x100c01['pubads']()[_0x4848('0x8')]();});}else{_0x100c01[_0x4848('0xe')][_0x4848('0x7')](function(){_0x100c01[_0x4848('0x17')]()['disableInitialLoad']();});}}function _0x4c363e(){window[_0x4848('0xd')]=window[_0x4848('0xd')]||{'cmd':[]};var _0x187965=window['googletag'];_0x187965[_0x4848('0xe')][_0x4848('0x7')](function(){if(!window[_0x4848('0xa')]){_0x187965[_0x4848('0x17')]()[_0x4848('0x0')]();}});}var _0x402ccc=parseFloat(localStorage['getItem'](_0x4848('0xb')))||0x1;if(Math[_0x4848('0x4')]()<=_0x402ccc){_0x390dd0();_0x3568dd();setTimeout(function(){_0x4c363e();},0xbb8);}}());</script>
+	
+	<base target="_top" />
+<script>var __uzdbm_1 = "a63060f5-2c20-45dd-93a9-58bbcc625bac";var __uzdbm_2 = "OTVmYzlhOTktY2oyai00MTQ3LWI0ZDEtMTgwNzllYWYwMjRmJDQ2LjIxMC4xOTguMTcx";var __uzdbm_3 = "7f60001b21317a-65a6-48ef-994f-e3974e138d0d17449791672940-6cf5d9ce7010d3a710";var __uzdbm_4 = "false";var __uzdbm_5 = "uzmx";var __uzdbm_6 = "7f9000ca6c357b-08dd-4875-b226-93ad4f9e7b931-17449791672940-b33b6bdde29a37c510";var __uzdbm_7 = "mako.co.il";</script> <script>   (function (w, d, e, u, c, g, a, b) {     w["SSJSConnectorObj"] = w["SSJSConnectorObj"] || {       ss_cid: c,       domain_info: "auto",     };     w[g] = function (i, j) {       w["SSJSConnectorObj"][i] = j;     };     a = d.createElement(e);     a.async = true;     if (       navigator.userAgent.indexOf('MSIE') !== -1 ||       navigator.appVersion.indexOf('Trident/') > -1     ) {       u = u.replace("/advanced/", "/advanced/ie/");     }     a.src = u;     b = d.getElementsByTagName(e)[0];     b.parentNode.insertBefore(a, b);   })(     window, document, "script", "https://www.mako.co.il/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js", "cj2l", "ssConf"   );   ssConf("c1", "https://www.mako.co.il");   ssConf("c3", "c99a4269-161c-4242-a3f0-28d44fa6ce24");   ssConf("au", "mako.co.il");   ssConf("cu", "validate.perfdrive.com, ssc"); </script></head>
+<body class="article news full-frame">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+<script>
+function CM8MakoBuildCat(){if(MakoCat=="mako.home"){CM8Cat=MakoCat;return}var c=MakoCat.split(".");var a=new Array();var b=c.length;a[0]=c[0];for(i=1;i<b;i++){a[i]=a[i-1]+"."+c[i]}a[b]=a[b-1]+".lobby";for(i=0;i<b;i++){a[i]+=".general"}CM8Cat=a[b];for(i=b-1;i>=0;i--){CM8Cat+=","+a[i]}};
+</script>
+<script>
+		OB_ContextKeyValue = 'n12-fullFrame';
+	</script>
+	<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T87PQS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T87PQS');</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WH7Q78" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WH7Q78');</script>
+<!-- End Google Tag Manager -->
+<script>(window.upManager || []).push("76410001");</script>
+<!-- GPT script begin -->
+<script>var makoReferrer = 'mako';if(document.referrer.length == 0){	makoReferrer = 'empty';	}else{var ref = document.referrer.split('?');	if (ref[0].indexOf("mako.co.il") ==-1)makoReferrer = 'other';}</script>
+<script src="//www.mako.co.il/Collab/cm8/360Advert.js"></script>
+<style>#Fullscreen_Wrapper iframe{width:100%;height:100%;position:fixed;left:0}</style>
+<div id="Fullscreen_Wrapper" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;visibility:visible;z-index:2147483638;"></div>
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+var gclidVal = 'FALSE';
+try{gclidVal =(localStorage.getItem('mako_gclid') || location.search.indexOf('gclid=') > -1) ? 'TRUE' : 'FALSE';}catch(err){}
+var agent = navigator.userAgent.toLowerCase();
+var isNoOzenNeeded = (agent.indexOf('ipad') != -1 || agent.indexOf('iphone') != -1 || agent.indexOf('android') != -1 )
+if (isNoOzenNeeded && window.DFP){DFP.ozenReady=true;}
+
+var CM8MakoHN = window.houseNumbers ? ("&makoHN="+houseNumbers) : "";	
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	function addCustomCriteria(name, val){
+		 (val &&  val != '' && val != 'null') ? googletag.pubads().setTargeting(name, val) : '';
+}
+	
+if (isCM8){
+	var googleAds = [];
+    googletag.cmd.push(function (){
+    // permutive code
+    if (0===window.googletag.pubads().getTargeting("permutive").length){try{var g=window.localStorage.getItem("_pdfps");window.googletag.pubads().setTargeting("permutive",g?JSON.parse(g):[])}catch(e){}}
+    
+    var fullscreen = googletag.defineSlot('/242748299/mako/news/n12magazine/FULLSCREEN', [[970,250],[970,540]],'Fullscreen_Wrapper').setTargeting("FORMAT","FULLSCREEN").addService(googletag.pubads());
+    
+    // end permutive code
+   
+    
+   	googleAds[0]=googletag.defineSlot('/242748299/mako/news/n12magazine/PREMIUM', [[970,540],[970,330],[5,5],[3,3],[970,250]],'CM8ShowAd_MEGA_PLASMA_970X330').addService(googletag.pubads()).setTargeting("FORMAT", ["PLASMA1_970","MEGA_PLASMA","ELVIS_MEGAPLASMA","ELVIS_PLASMA","Billboard970"]).setCollapseEmptyDiv(true,true);
+    
+   	
+    googleAds[1]=googletag.defineSlot('/242748299/mako/news/n12magazine/PLASMA1_750', [[750,140],[5,5]],'CM8ShowAd_PLASMA1_750X140').addService(googletag.pubads()).setTargeting("FORMAT", ["PLASMA1_750"]).setCollapseEmptyDiv(true,true);
+      
+    googleAds[2]=googletag.defineSlot('/242748299/mako/news/n12magazine/OZEN',[[160,600],[120,600],[240,400]],'mako_main_glideDiv').addService(googletag.pubads()).setTargeting("FORMAT","OZEN");
+	googleAds[3] = googletag.defineSlot('/242748299/mako/news/n12magazine/JAMBO1_728',[728,90], 'CM8ShowAd_JAMBO1_728X90').addService(googletag.pubads()).setTargeting("FORMAT", "JAMBO1_728").setCollapseEmptyDiv(true,true);
+    googleAds[4] = googletag.defineSlot('/242748299/mako/news/n12magazine/JAMBO1_970',[970,90], 'CM8ShowAd_JAMBO1_970X90').addService(googletag.pubads()).setTargeting("FORMAT", "JAMBO1_970").setCollapseEmptyDiv(true,true);
+	googleAds[5] = googletag.defineSlot('/242748299/mako/news/n12magazine/CORNER_PEEL',[1,1], 'CM8ShowAd_CORNER_PEEL_1X1').addService(googletag.pubads()).setTargeting("FORMAT", "CORNER_PEEL").setCollapseEmptyDiv(true,true);
+       
+    googleAds[6] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER1_300',[300,250], 'CM8ShowAd_MONSTER1_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER1_300").setCollapseEmptyDiv(true,true);
+    
+    googleAds[7] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER2_300',[300,250], 'CM8ShowAd_MONSTER2_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER2_300");
+    
+    googleAds[8] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER3_300',[300,250], 'CM8ShowAd_MONSTER3_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER3_300");
+	
+    googleAds[9] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER1_250',[250,250], 'CM8ShowAd_MONSTER1_250X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER1_250");
+    
+    googleAds[10] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER2_250',[250,250], 'CM8ShowAd_MONSTER2_250X250').addService(googletag.pubads()).setTargeting("FORMAT","MONSTER2_250");
+    
+    googleAds[11] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER3_250',[250,250], 'CM8ShowAd_MONSTER3_250X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER3_250");
+    
+    googleAds[12] = googletag.defineSlot('/242748299/mako/news/n12magazine/POSTER',[300,600], 'CM8ShowAd_POSTER_300X600').setTargeting("FORMAT", "POSTER").setCollapseEmptyDiv(true).addService(googletag.pubads());
+    
+    googleAds[13] = googletag.defineSlot('/242748299/mako/news/n12magazine/POSTER2',[300,600], 'CM8ShowAd_POSTER2_300X600').addService(googletag.pubads()).setTargeting("FORMAT", "POSTER2");
+    
+    googleAds[14] = googletag.defineSlot('/242748299/mako/news/n12magazine/POSTER3',[300,600], 'CM8ShowAd_POSTER3_300X600').addService(googletag.pubads()).setTargeting("FORMAT", "POSTER3");
+	
+	googleAds[15]=googletag.defineSlot('/242748299/mako/news/n12magazine/INNER_OZEN',[120,600],'CM8ShowAd_OZEN1_120X600').addService(googletag.pubads()).setTargeting("FORMAT","OZEN_INNER").setCollapseEmptyDiv(true,true);
+    
+	googleAds[16]=googletag.defineSlot('/242748299/mako/news/n12magazine/COAST2COAST1_970',[970,90],'CM8ShowAd_COAST2COAST1_970X90').addService(googletag.pubads()).setTargeting("FORMAT","COAST2COAST1_970");
+        
+    googleAds[17]=googletag.defineSlot('/242748299/mako/news/n12magazine/COAST2COAST1_728',[728,90],'CM8ShowAd_COAST2COAST1_728X90').addService(googletag.pubads()).setTargeting("FORMAT","COAST2COAST1_728");
+    
+    googleAds[18]=googletag.defineSlot('/242748299/mako/news/n12magazine/STANDARD1',[234,60],'CM8ShowAd_STANDARD1_234X60').addService(googletag.pubads()).setTargeting("FORMAT","STANDARD1");
+   
+    googleAds[19]=googletag.defineSlot('/242748299/mako/news/n12magazine/CUBE1',[276,174],'CM8ShowAd_CUBE1_276X174').addService(googletag.pubads()).setTargeting("FORMAT","CUBE1");   
+   
+	googleAds[20] = googletag.defineSlot('/242748299/mako/news/n12magazine/ARTICLE1_250X250',[250,250], 'CM8ShowAd_ARTICLE1_250X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE1_250X250").setCollapseEmptyDiv(true,true);
+	
+    googleAds[21] = googletag.defineSlot('/242748299/mako/news/n12magazine/ARTICLE1_300X250',[300,250],'CM8ShowAd_ARTICLE1_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE1_300X250").setCollapseEmptyDiv(true,true);   
+    
+    googleAds[22] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER4_300',[300,250], 'CM8ShowAd_MONSTER4_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER4_300");
+    googleAds[23] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER5_300',[300,250], 'CM8ShowAd_MONSTER5_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER5_300");
+    googleAds[24] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER6_300',[300,250], 'CM8ShowAd_MONSTER6_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER6_300");
+    googleAds[25] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER7_300',[300,250], 'CM8ShowAd_MONSTER7_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER7_300");
+    googleAds[26] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER8_300',[300,250], 'CM8ShowAd_MONSTER8_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER8_300");
+    googleAds[27] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER9_300',[300,250], 'CM8ShowAd_MONSTER9_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER9_300");
+    googleAds[28] = googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER10_300',[300,250], 'CM8ShowAd_MONSTER10_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER10_300");
+    googleAds[29] = googletag.defineSlot('/242748299/mako/news/n12magazine/ARTICLE2_300X250',[300,250],'CM8ShowAd_ARTICLE2_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE2_300X250").setCollapseEmptyDiv(true,true);
+    googleAds[30] = googletag.defineSlot('/242748299/mako/news/n12magazine/ARTICLE3_300X250',[300,250],'CM8ShowAd_ARTICLE3_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE3_300X250").setCollapseEmptyDiv(true,true); 
+    googleAds[31] = googletag.defineSlot('/242748299/mako/news/n12magazine/ARTICLE4_300X250',[300,250],'CM8ShowAd_ARTICLE4_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE4_300X250").setCollapseEmptyDiv(true,true);
+    googleAds[32] = googletag.defineSlot('/242748299/mako/news/n12magazine/ARTICLE5_300X250',[300,250],'CM8ShowAd_ARTICLE5_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE5_300X250").setCollapseEmptyDiv(true,true); 
+    googleAds[33] = googletag.defineSlot('/242748299/mako/news/n12magazine/ARTICLE6_300X250',[300,250],'CM8ShowAd_ARTICLE6_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE6_300X250").setCollapseEmptyDiv(true,true);   
+    
+    googleAds[34]=googletag.defineSlot('/242748299/mako/news/n12magazine/MONSTER_300',[300,250], 'CM8ShowAd_MONSTER_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER_300").setCollapseEmptyDiv(true,true);
+    googleAds[35]=googletag.defineSlot('/242748299/mako/news/n12magazine/DOUBLESTANDARD',[468,60],'CM8ShowAd_DOUBLESTANDARD_468X60').addService(googletag.pubads()).setTargeting("FORMAT","DOUBLESTANDARD").setCollapseEmptyDiv(true,true);
+    
+    
+    //googleAds[29] = googletag.defineSlot('/242748299/mako/news/n12magazine/PREMIUM', [[6,6],[3,3]],'CM8ShowAd_BILLBOARD_970X400').addService(googletag.pubads()).setTargeting("FORMAT", "Billboard970").setCollapseEmptyDiv(true,true);
+    
+    if(window.contentType=='articleins'){
+    	if(document.querySelector('link[rel="video_src"]')!=null){
+    		addCustomCriteria("video","true");
+    	}
+    }
+    
+    window.DFP && googletag.defineOutOfPageSlot('/242748299/mako/news/n12magazine/TOPLAYER','DFP_TOPLAYER').addService(googletag.pubads()).setTargeting("FORMAT", "TOPLAYER");
+      
+       addCustomCriteria("makoHN", window.houseNumbers);
+       //addCustomCriteria("MAKOAREA", '');
+       addCustomCriteria("MAKOPAGE", '9896b09319416910VgnVCM200000650a10acRCRD');
+       addCustomCriteria("mako_referrer", makoReferrer);
+       addCustomCriteria("CONTENTTYPE", window.contentType);
+       addCustomCriteria("LEVEL4", 'null');
+       addCustomCriteria("LEVEL5", 'null');
+       addCustomCriteria("LEVEL6", 'null');
+       addCustomCriteria("LEVEL7", 'null');  
+       addCustomCriteria("GCLID", gclidVal);
+	   // for test use
+       if (location.hostname.match('int|adm')) {
+       	   addCustomCriteria("TEST", "WINT"); 
+       }
+	   //googletag.pubads().collapseEmptyDivs(true);
+	   //if (DFP && DFP.isHP){
+	   //   googletag.pubads().enableSingleRequest();
+       //}
+       googletag.pubads().addEventListener('slotRenderEnded', function(event) {	
+		    window.domoBundle && domoBundle.handleAdEnded && domoBundle.handleAdEnded(event);	
+            DFP && DFP.renderAdEnded && DFP.renderAdEnded(event); 
+            if (event.slot.getSlotElementId() === 'Fullscreen_Wrapper' && event.isEmpty == false){
+                document.querySelector('#Fullscreen_Wrapper').style.display = 'block';
+            }
+	    });
+        googletag.enableServices();       
+    });
+    googletag.cmd.push(function (){
+        googletag.display('Fullscreen_Wrapper');
+    });
+}    
+</script>
+<div id="DFP_TOPLAYER" style="height:0px"></div>
+<script>googletag.cmd.push(function() { googletag.display('DFP_TOPLAYER'); });</script>
+<script async src="//mrb.upapi.net/code?w=5632346594213888&uponit=true"></script>
+<header class="toolbar">
+		<div class="inner">
+<a class="logo" href="https://www.n12.co.il"data-domo-click={"content_type":"unknown","channel_depth":-1,"clicked_item_url":"https://www.n12.co.il","referring_component":"bc8e0fea912c2710VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","click_type":"link","clicked_item_id":"unknown"}></a>
+			<ul class="weather-slider" data-feed="/AjaxPage?jspName=sideBarJsonResponse.jsp&type=weather" data-domo-click={"content_type":"channel","channel_depth":2,"clicked_item_url":"https://www.mako.co.il/news-weather","referring_component":"bc8e0fea912c2710VgnVCM100000700a10acRCRD","clicked_channel_id":"4caece3418897110VgnVCM1000005201000aRCRD","click_type":"link","clicked_item_id":"4caece3418897110VgnVCM1000005201000aRCRD"}></ul>
+			<span class="date"></span>
+			<a class="s-logo" href="https://www.n12.co.il"data-domo-click={"content_type":"unknown","channel_depth":-1,"clicked_item_url":"https://www.n12.co.il","referring_component":"bc8e0fea912c2710VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","click_type":"link","clicked_item_id":"unknown"}></a>
+		</div>
+	</header>
+
+<nav class="menu responsive v-2020">
+		<ul>
+			<li>
+				<ul>
+					<li class="logo" data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://www.n12.co.il"}>
+						<a href="https://www.n12.co.il"></a>
+					</li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"7bd56f39402f1810VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"7bd56f39402f1810VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-dailynews"}><a href="https://www.mako.co.il/news-dailynews?partner=NewsNavBar">כל החדשות</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"45af43ad8df07110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"45af43ad8df07110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-military"}><a href="/news-military?partner=NewsNavBar">ביטחוני</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"6b7f002a06267710VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"6b7f002a06267710VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-diplomatic"}><a href="https://www.mako.co.il/news-diplomatic?partner=NewsNavBar">מדיני</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"abc7f3226147b610VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"abc7f3226147b610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-politics"}><a href="https://www.mako.co.il/news-politics?partner=NewsNavBar">פוליטי</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"338cc3bdc7f26110VgnVCM1000005201000aRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"338cc3bdc7f26110VgnVCM1000005201000aRCRD","clicked_item_url":"https://www.mako.co.il/news-israel"}><a href="/news-israel?partner=NewsNavBar">בארץ</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"dbfcc3bdc7f26110VgnVCM1000005201000aRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"dbfcc3bdc7f26110VgnVCM1000005201000aRCRD","clicked_item_url":"https://www.mako.co.il/news-world"}><a href="https://www.mako.co.il/news-world?partner=NewsNavBar">בעולם</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"adbcb2eb226bb110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"adbcb2eb226bb110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money"}><a href="https://www.mako.co.il/news-money?partner=NewsNavBar">כלכלה</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"a19b19d0387a5710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"a19b19d0387a5710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-n12_magazine"}><a href="https://www.mako.co.il/news-n12_magazine?partner=NewsNavBar">המגזין</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"ee5208a2b1d13810VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"ee5208a2b1d13810VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-specials/data_n12"}><a href="https://www.mako.co.il/news-specials/data_n12?partner=NewsNavBar">DATA</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"9eeefd8e5656b610VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"9eeefd8e5656b610VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-entertainment"}><a href="https://www.mako.co.il/news-entertainment?partner=NewsNavBar">תרבות</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"a52cb2eb226bb110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"a52cb2eb226bb110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-law"}><a href="https://www.mako.co.il/news-law?partner=NewsNavBar">פלילי</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"368b5b651147b610VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"368b5b651147b610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-education"}><a href="https://www.mako.co.il/news-education?partner=NewsNavBar">חינוך</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"fdccb2eb226bb110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"fdccb2eb226bb110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money/consumer"}><a href="https://www.mako.co.il/news-money/consumer?partner=NewsNavBar">צרכנות</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"69a63ec2549a6710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"69a63ec2549a6710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money/real_estate"}><a href="https://www.mako.co.il/news-money/real_estate?partner=NewsNavBar">עיצוב ונדל"ן</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"e71eeda1962ba810VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"e71eeda1962ba810VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money/tech12"}><a href="https://www.mako.co.il/news-money/tech12?partner=NewsNavBar"target="_blank">TECH12</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"b62d385642ba7710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"b62d385642ba7710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-podcast_n12"}><a href="https://www.mako.co.il/news-podcast_n12?partner=NewsNavBar">הפודקאסטים</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"5fdf43ad8df07110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"5fdf43ad8df07110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-columns"}><a href="https://www.mako.co.il/news-columns?partner=NewsNavBar">פרשנות</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"6bec0e6a73322910VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"6bec0e6a73322910VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-n12_magazine/nussbaum_typing"}><a href="https://www.mako.co.il/news-n12_magazine/nussbaum_typing?partner=NewsNavBar">נוסבאום מקליד</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"5550fd8e5656b610VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"5550fd8e5656b610VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-lifestyle"}><a href="https://www.mako.co.il/news-lifestyle?partner=NewsNavBar">בריאות</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"37c39138919c7710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"37c39138919c7710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-science"}><a href="https://www.mako.co.il/news-science?partner=NewsNavBar">מדע וסביבה</a></li><li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://stories.sc/mako/channel12jobs/?makoOpenChromeTabs=1"}><a href="https://stories.sc/mako/channel12jobs/?makoOpenChromeTabs=1&partner=NewsNavBar">דרושים חדשות 12</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"291362ae3b50a710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"291362ae3b50a710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-business"}><a href="https://www.mako.co.il/news-business?partner=NewsNavBar">BUSINESS</a></li><li data-domo-click={"content_type":"channel","channel_depth":1,"click_type":"link","clicked_item_id":"b5f4c13070733210VgnVCM2000002a0c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"b5f4c13070733210VgnVCM2000002a0c10acRCRD","clicked_item_url":"https://www.mako.co.il/mako-vod"}><a href="https://www.mako.co.il/mako-vod?partner=NewsNavBar">12+</a></li></ul>
+			</li>
+			<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12"}><a href="https://www.mako.co.il/news-channel12?partner=NewsNavBar">תוכניות</a></li><li data-domo-click={"content_type":"channel","channel_depth":0,"click_type":"link","clicked_item_id":"3d385dd2dd5d4110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"3d385dd2dd5d4110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il"}><a href="https://www.mako.co.il?partner=NewsNavBar"target="_blank">mako</a></li><li class="more">
+				<span class="open"></span>
+				<ul>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"7bd56f39402f1810VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"7bd56f39402f1810VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-dailynews"}><a href="https://www.mako.co.il/news-dailynews?partner=NewsNavBar">כל החדשות</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"45af43ad8df07110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"45af43ad8df07110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-military"}><a href="/news-military?partner=NewsNavBar">ביטחוני</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"6b7f002a06267710VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"6b7f002a06267710VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-diplomatic"}><a href="https://www.mako.co.il/news-diplomatic?partner=NewsNavBar">מדיני</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"abc7f3226147b610VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"abc7f3226147b610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-politics"}><a href="https://www.mako.co.il/news-politics?partner=NewsNavBar">פוליטי</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"338cc3bdc7f26110VgnVCM1000005201000aRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"338cc3bdc7f26110VgnVCM1000005201000aRCRD","clicked_item_url":"https://www.mako.co.il/news-israel"}><a href="/news-israel?partner=NewsNavBar">בארץ</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"dbfcc3bdc7f26110VgnVCM1000005201000aRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"dbfcc3bdc7f26110VgnVCM1000005201000aRCRD","clicked_item_url":"https://www.mako.co.il/news-world"}><a href="https://www.mako.co.il/news-world?partner=NewsNavBar">בעולם</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"adbcb2eb226bb110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"adbcb2eb226bb110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money"}><a href="https://www.mako.co.il/news-money?partner=NewsNavBar">כלכלה</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"a19b19d0387a5710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"a19b19d0387a5710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-n12_magazine"}><a href="https://www.mako.co.il/news-n12_magazine?partner=NewsNavBar">המגזין</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"ee5208a2b1d13810VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"ee5208a2b1d13810VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-specials/data_n12"}><a href="https://www.mako.co.il/news-specials/data_n12?partner=NewsNavBar">DATA</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"9eeefd8e5656b610VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"9eeefd8e5656b610VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-entertainment"}><a href="https://www.mako.co.il/news-entertainment?partner=NewsNavBar">תרבות</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"a52cb2eb226bb110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"a52cb2eb226bb110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-law"}><a href="https://www.mako.co.il/news-law?partner=NewsNavBar">פלילי</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"368b5b651147b610VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"368b5b651147b610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-education"}><a href="https://www.mako.co.il/news-education?partner=NewsNavBar">חינוך</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"fdccb2eb226bb110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"fdccb2eb226bb110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money/consumer"}><a href="https://www.mako.co.il/news-money/consumer?partner=NewsNavBar">צרכנות</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"69a63ec2549a6710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"69a63ec2549a6710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money/real_estate"}><a href="https://www.mako.co.il/news-money/real_estate?partner=NewsNavBar">עיצוב ונדל"ן</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"e71eeda1962ba810VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"e71eeda1962ba810VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money/tech12"}><a href="https://www.mako.co.il/news-money/tech12?partner=NewsNavBar"target="_blank">TECH12</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"b62d385642ba7710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"b62d385642ba7710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-podcast_n12"}><a href="https://www.mako.co.il/news-podcast_n12?partner=NewsNavBar">הפודקאסטים</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"5fdf43ad8df07110VgnVCM100000290c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"5fdf43ad8df07110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-columns"}><a href="https://www.mako.co.il/news-columns?partner=NewsNavBar">פרשנות</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"6bec0e6a73322910VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"6bec0e6a73322910VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-n12_magazine/nussbaum_typing"}><a href="https://www.mako.co.il/news-n12_magazine/nussbaum_typing?partner=NewsNavBar">נוסבאום מקליד</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"5550fd8e5656b610VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"5550fd8e5656b610VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-lifestyle"}><a href="https://www.mako.co.il/news-lifestyle?partner=NewsNavBar">בריאות</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"37c39138919c7710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"37c39138919c7710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-science"}><a href="https://www.mako.co.il/news-science?partner=NewsNavBar">מדע וסביבה</a></li><li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://stories.sc/mako/channel12jobs/?makoOpenChromeTabs=1"}><a href="https://stories.sc/mako/channel12jobs/?makoOpenChromeTabs=1&partner=NewsNavBar">דרושים חדשות 12</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"291362ae3b50a710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"291362ae3b50a710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-business"}><a href="https://www.mako.co.il/news-business?partner=NewsNavBar">BUSINESS</a></li><li data-domo-click={"content_type":"channel","channel_depth":1,"click_type":"link","clicked_item_id":"b5f4c13070733210VgnVCM2000002a0c10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"b5f4c13070733210VgnVCM2000002a0c10acRCRD","clicked_item_url":"https://www.mako.co.il/mako-vod"}><a href="https://www.mako.co.il/mako-vod?partner=NewsNavBar">12+</a></li></ul>
+			</li>
+			<li class="special" data-text="מיוחד">
+				<span class="open"></span>
+				<ul>
+					<li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"130b9b060c50a710VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"130b9b060c50a710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-business/duns_100"}><a href="https://www.mako.co.il/news-business/duns_100?partner=NewsNavBar">duns 100</a></li><li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://www.din.co.il/"}><a href="https://www.din.co.il/?partner=NewsNavBar">din.co.il</a></li><li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"3357ebc54d3a9710VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"3357ebc54d3a9710VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-med12"}><a href="https://www.mako.co.il/news-med12?partner=NewsNavBar">MED12</a></li><li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://www.drushim.co.il/?utm_source=N12top"}><a href="https://www.drushim.co.il/?utm_source=N12top&partner=NewsNavBar"target="_blank">דרושים IL</a></li><li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://easy.co.il/home/?utm_source=n12&utm_campaign=homepage&utm_medium=link"}><a href="https://easy.co.il/home/?utm_source=n12&utm_campaign=homepage&utm_medium=link&partner=NewsNavBar"target="_blank">easy</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"631454bc733ed710VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"631454bc733ed710VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-med12/hematology"}><a href="https://www.mako.co.il/news-med12/hematology?partner=NewsNavBar">המטולוגיה</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"20464b4530133810VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"20464b4530133810VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-special_projects/conferences"}><a href="https://www.mako.co.il/news-special_projects/conferences?partner=NewsNavBar">ועידות קשת 12</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"e8829f64c7ff0810VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"e8829f64c7ff0810VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-med12/lung_ambition"}><a href="https://www.mako.co.il/news-med12/lung_ambition?partner=NewsNavBar">לאנג אמבישן</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"acdd34147c2b1910VgnVCM200000650a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"acdd34147c2b1910VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-med12/innovative_cancer_treatment"}><a href="https://www.mako.co.il/news-med12/innovative_cancer_treatment?partner=NewsNavBar">להיאבק בסרטן</a></li><li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://www.n12.co.il/news-special_projects/neighborhood_with_everything"}><a href="https://www.n12.co.il/news-special_projects/neighborhood_with_everything?partner=NewsNavBar">שכונה עם הכל</a></li><li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"2d65a7fb62c33810VgnVCM100000700a10acRCRD","referring_component":"46aa2b913ecf4710VgnVCM100000700a10acRCRD","clicked_channel_id":"2d65a7fb62c33810VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-med12/liver_cancer"}><a href="https://www.mako.co.il/news-med12/liver_cancer?partner=NewsNavBar">כַּבֵּד את הַכָּבֵד</a></li></ul>
+			</li>
+			<li class="search-bar">
+				<form action="/newssearch" autocomplete="off">
+					<input type="search" name="searchstring_input" placeholder="חיפוש ב - N12">
+					<input type="hidden" value="6a6d777d11485910VgnVCM200000650a10acRCRD" name="vgnextoid" id="vgnextoid">
+					<input type="hidden" name="pageNum" value="1" />
+					<input type="hidden" name="app" value="thenews" />
+					<input type="hidden" name="fmt" value="json" />
+					<button>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+							<path fill="#333538" fill-rule="nonzero" stroke="#333538" stroke-width=".95"
+								d="M6.282 5.782c2.344-2.343 6.179-2.307 8.566.081 2.04 2.04 2.363 5.135.954 7.455l4.907 4.908-1.06 1.06-4.791-4.79-.091.089c-2.355 2.184-6.07 2.097-8.404-.237-2.388-2.387-2.424-6.222-.08-8.566zm.824.824c-1.897 1.897-1.868 5.001.065 6.934 1.933 1.933 5.037 1.962 6.934.065 1.897-1.897 1.868-5.001-.065-6.934-1.933-1.933-5.037-1.962-6.934-.065z"
+								opacity=".8" />
+						</svg>
+					</button>
+				</form>
+			</li>
+		</ul>
+	</nav>
+<div class="reading-bar not-for-print">
+	<div class="progress"></div>
+</div>
+<a href="https://www.n12.co.il"><img class="logo" src="https://rcs.mako.co.il/images/svg/mako-article-2019/logo-n-12.svg" alt="N12 לוגו" /></a>
+	<figure>
+              <img src="https://img.mako.co.il/2025/04/17/FF_syria_NEW_re.png" alt="סדר אזורי חדש - סוריה (צילום: reuters)" title="סדר אזורי חדש - סוריה (צילום: reuters)" />
+                  <figcaption>
+				  <span>ארכיון</span>
+				  <span> | <span>צילום: reuters</span></span></figcaption>
+    </figure><div id="full-frame-article-wrap">
+<div id="article-wrap">
+		<button class="up not-for-print">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    			<path fill="#00AEEF" fill-rule="evenodd" d="M0 0h50v50H0V0zm27.97 17.828L25.143 15 11 29.142l2.828 2.829 11.314-11.314L36.456 31.97l2.828-2.829-11.313-11.314z"/>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="hover">
+			    <g fill="#00AEEF" fill-rule="evenodd">
+			        <path fill-rule="nonzero" d="M2 2v46h46V2H2zM0 0h50v50H0V0z"/>
+			        <path d="M27.97 17.828l11.314 11.314-2.828 2.829-11.314-11.314L13.828 31.97 11 29.142 25.142 15l2.829 2.828z"/>
+			    </g>
+			</svg>
+		</button>
+		<article>
+			<aside class="side-bar not-for-print">
+					<div id="root" data-status="0" data-side-chat="side-chat" data-disabled="1"></div>
+					<div id="side-chat"></div>
+					<div class="ad b300X600 cm8">
+			<div id="CM8ShowAd_POSTER_300X600" data-title="POSTER_300X600">
+			<script>			
+				window.DFP && DFP.showBanner('POSTER','300X600');				
+			</script>
+			</div>
+		</div>
+<script>
+      var pageUrl = "";
+      var isMako = document.location.href.indexOf(".mako.co.il") !== -1;
+      var isTech12 = document.location.href.indexOf(".tech12.co.il") !== -1;
+
+      if (isMako) {
+        pageUrl = "https://www.mako.co.il" + window.location.pathname;
+      }
+      if (isTech12) {
+        pageUrl = "https://www.tech12.co.il" + window.location.pathname;
+      }
+      document.write('<div class="OUTBRAIN" data-src=' +pageUrl+' data-widget-id="CR_3"><\/div>');
+    </script>
+
+  <div class="ad b300X250 cm8" id="JokerAdWrapper">
+						<div id="CM8ShowAd_MONSTER1_300X250"></div>
+					</div> 
+					<script>
+						window.clientCallBackFunction=function(jokerCardElementFromOutbrain){
+							const myAdElement =document.getElementById("JokerAdWrapper");
+							jokerCardElementFromOutbrain.appendChild(myAdElement);
+							console.log("jokerCardElementFromOutbrain",jokerCardElementFromOutbrain);
+							DFP.showBanner('MONSTER1','300X250');
+						};
+					</script>
+				</aside>
+			<style>
+        		#article-wrap article{
+	        		grid-template-areas: 
+			    	"header header"
+			        "follow-us breadcrumbs"
+			        "extra-wide extra-wide"
+			        "article-header-wide article-header-wide"
+			        "sidebar article-body"
+			        "sidebar article-footer"
+			        "sidebar .";
+			    }
+        	</style>
+		<section class="article-header FF-pic wide">
+  <header> 
+      <!-- Google snippet Article.headline -->
+      <span itemprop="headline" content="בסוריה מתרחש אירוע היסטורי, וישראל לא מנצלת אותו"></span>
+      <!-- Google snippet Article.inLanguge='he' -->
+      <span itemprop="inLanguage" content="he"></span>
+      <!-- Google snippet Article.discussionURL (talkbacks page) -->
+      <span itemprop="discussionUrl" content="https://www.mako.co.il/nTalkbacksPage/vgnextoid=9896b09319416910VgnVCM200000650a10acRCRD&vgnextchannel=6a6d777d11485910VgnVCM200000650a10acRCRD&page=1&"></span>
+      <!-- Google snippet Article.articleSection (Mako Lobby) -->
+      <span itemprop="articleSection" content="החדשות"></span>
+                          
+      <h1>בסוריה מתרחש אירוע היסטורי, וישראל לא מנצלת אותו</h1>
+		<h2>עד לפני ארבעה חודשים הפאזל שנקרא סוריה היה נראה בלתי ניתן להרכבה, אלא שהפלת אסד הובילה להזדמנות חסרת תקדים. את הכיסא תפס אדם שמכונה בישראל גם "הג'יהאדיסט בחליפה" – אבל דווקא הוא יכול לחולל מהפך ביחסים | סדר אזורי חדש – המזרח התיכון בעידן של שינוי: איתי אנגל בטור פרשנות מיוחד</h2>
+			<!-- Google snippet Article.description -->
+	      	<span itemprop="description" content="עד לפני ארבעה חודשים הפאזל שנקרא סוריה היה נראה בלתי ניתן להרכבה, אלא שהפלת אסד הובילה להזדמנות חסרת תקדים. את הכיסא תפס אדם שמכונה בישראל גם &quot;הג'יהאדיסט בחליפה&quot; – אבל דווקא הוא יכול לחולל מהפך ביחסים | סדר אזורי חדש – המזרח התיכון בעידן של שינוי: איתי אנגל בטור פרשנות מיוחד"></span>      	
+      	<!--  -->
+       <span>
+       	<meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" 
+       	itemid="https://www.mako.co.il/news-n12_magazine/6a6d777d11485910/Article-9896b0931941691026.htm"/>
+       </span>
+      <div class="writer-data">
+    <img src="https://img.mako.co.il/2021/08/28/Itay_Engel_Tur.jpg"/><!-- Google Snippet for Article.author -->
+        	<span itemprop="author" content="איתי אנגל"></span>
+        	<a  href="/tv-ilana_dayan/team/Editor-dbcce5ac6131911004.htm">איתי אנגל</a>
+		<span > | </span>
+      <span class="source">מגזין N12</span>  <!-- Google Snippet for Article.datePublished -->
+    <span itemprop="datePublished" content="2025-04-17T16:38+0000" ></span>
+    <!-- Google Snippet for Article.dateModified -->
+    <span itemprop="dateModified" content="2025-04-18T10:11+0000"></span>
+    <!-- Google Snippet for Article.image -->
+	<span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+	  <meta itemprop="url" content="https://img.mako.co.il/2025/04/15/_syria_B_re.png">
+	  <meta itemprop="width" content="232">
+	  <meta itemprop="height" content="174">
+	</span> 
+	<meta itemprop="name" content="mako">
+    <span class="display-date" data-updatedate="1744971060000"><span>| פורסם 17/04/25</span> <span>19:38</span>&nbsp;<span>| עודכן 18/04/25</span> <span>13:11</span></span>
+    <span class="clear"></span>
+    </div>
+    </header>
+    <ul class="icons-bar not-for-print">
+      <li class="views" data-key="9896b09319416910VgnVCM200000650a10acRCRD">
+          <svg xmlns=http://www.w3.org/2000/svg width="18" height="12" viewBox="0 0 18 12">
+             <path fill="#AAACAF" fill-rule="nonzero" d="M9 0C4.91 0 1.415 2.488 0 6c1.415 3.512 4.91 6 9 6s7.585-2.488 9-6c-1.415-3.512-4.91-6-9-6zm0 10c-2.258 0-4.09-1.792-4.09-4S6.741 2 9 2s4.09 1.792 4.09 4-1.832 4-4.09 4zm0-6.4C7.642 3.6 6.545 4.672 6.545 6c0 1.328 1.097 2.4 2.455 2.4s2.455-1.072 2.455-2.4c0-1.328-1.097-2.4-2.455-2.4z"/>
+            </svg>
+          <span></span>
+        </li>
+      <li class="print">
+    		<a href="#">
+	    		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="17" viewBox="0 0 16 17">
+				    <defs>
+				        <path id="print-a" d="M0 0h15.958v16.734H0z"/>
+				        <path id="print-c" d="M12.058 14.72l-8.081.013.309-1.876.58-3.53h6.303l.582 3.53.307 1.864zM4.653 2h6.677v1.918H4.643L4.653 2zm11.305 5.185a3.277 3.277 0 0 0-2.628-3.201V1a1 1 0 0 0-1-1H3.658a1 1 0 0 0-1 .995l-.015 2.987A3.277 3.277 0 0 0 0 7.185v5.657c0 .008.007.015.016.015h2.243l-.447 2.716a.998.998 0 0 0 .987 1.162l10.439-.016a1.001 1.001 0 0 0 .985-1.163l-.445-2.7h2.18V7.186z"/>
+				    </defs>
+				    <g fill="none" fill-rule="evenodd">
+				        <mask id="print-m" fill="#fff">
+				            <use xlink:href="#print-a"/>
+				        </mask>
+				        <g mask="url(#print-m)">
+				            <mask id="print-md" fill="#fff">
+				                <use xlink:href="#print-c"/>
+				            </mask>
+				            <use fill="#1B1464" xlink:href="#print-c"/>
+				            <g fill="#000" mask="url(#print-md)">
+				                <path d="M-66-68H82V80H-66z"/>
+				            </g>
+				        </g>
+				    </g>
+				</svg>
+    			<span>הדפסה</span>
+    		</a>
+      </li>
+       <li class="gotocomments">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="17" viewBox="0 0 16 17">
+            <defs>
+              <path id="comments-top" d="M7 13l-3.488 3.488A.3.3 0 0 1 3 16.276V13h-.2A2.8 2.8 0 0 1 0 10.2V2.8A2.8 2.8 0 0 1 2.8 0h10.4A2.8 2.8 0 0 1 16 2.8v7.4a2.8 2.8 0 0 1-2.8 2.8H7zM3.5 4a.5.5 0 0 0 0 1h9a.5.5 0 1 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 1 0 0-1h-9z"/>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <mask id="comments-tm" fill="#fff">
+                <use xlink:href="#comments-top"/>
+              </mask>
+              <use fill="#00AEEF" fill-rule="nonzero" xlink:href="#comments-top"/>
+              <g fill="#000" mask="url(#comments-tm)">
+                <path d="M-70-72H78V76H-70z"/>
+              </g>
+            </g>
+          </svg>
+            <span></span>
+          </a>
+        </li>
+    	</ul>
+    <aside class="share-bar not-for-print" style="display:none;">
+		<div class="fonts">
+			<a href="#" class="plus">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+				    <defs>
+				        <path id="plus" d="M19.198 3.77c-.042 1.092-.186 1.88-.432 2.362-.194.39-.66.918-1.396 1.587L16.1 8.887l3.479 6.195c.228.398.152.597-.229.597h-2.107c-.44 0-.753-.182-.94-.546l-4.05-7.694-.57.42c-.432.313-.648 1.049-.648 2.208v5.04c0 .381-.14.572-.42.572H8.738c-.347 0-.52-.2-.52-.597v-5.04c0-1.794.626-3.182 1.878-4.164l.724-.571L8.089.546C7.896.182 8.019 0 8.459 0h2.158c.33 0 .563.14.698.419l3.377 6.348.762-.711c.482-.457.74-1.063.774-1.816L16.38.47c0-.313.165-.47.495-.47h1.98c.296 0 .445.19.445.571l-.102 3.2zM1.818 9.022H.198c-.132 0-.198-.063-.198-.19v-.855c0-.133.066-.199.198-.199h1.62V6.198c0-.132.066-.198.199-.198h.854c.132 0 .198.066.198.198v1.58h1.634c.132 0 .198.065.198.198v.854c0 .128-.066.191-.198.191H3.07v1.655c0 .132-.066.198-.198.198h-.854c-.133 0-.199-.066-.199-.198V9.02z"/>
+				    </defs>
+				    <g fill="none" fill-rule="evenodd">
+				        <mask id="plus-m" fill="#fff">
+				            <use xlink:href="#plus"/>
+				        </mask>
+				        <use fill="#000" xlink:href="#plus"/>
+				        <g fill="#000" mask="url(#plus-m)">
+				            <path d="M-60-86H88V62H-60z"/>
+				        </g>
+				    </g>
+				</svg>
+			</a>
+	    	<a href="#" class="minus">
+		    	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="12" viewBox="0 0 17 12">
+				    <defs>
+				        <path id="minus" d="M15.752 2.756c-.03.756-.13 1.3-.299 1.635-.135.27-.457.635-.967 1.098l-.879.809 2.409 4.289c.158.275.105.413-.159.413h-1.459c-.304 0-.521-.126-.65-.378l-2.804-5.326-.395.29c-.3.217-.449.726-.449 1.53v3.488c0 .264-.096.396-.29.396h-1.3c-.24 0-.36-.138-.36-.413v-3.49c0-1.242.433-2.202 1.3-2.882l.501-.396L8.061.523c-.134-.252-.05-.377.255-.377H9.81c.229 0 .39.096.484.29l2.338 4.394.527-.492c.334-.317.513-.735.536-1.257l.106-2.61c0-.217.114-.325.342-.325h1.372c.205 0 .307.131.307.395l-.07 2.215zM4.824 3.805c.128 0 .192.066.192.198v.923c0 .132-.064.198-.192.198H.456c-.132 0-.198-.066-.198-.198v-.923c0-.132.066-.198.198-.198h4.368z"/>
+				    </defs>
+				    <g fill="none" fill-rule="evenodd">
+				        <mask id="minus-m" fill="#fff">
+				            <use xlink:href="#minus"/>
+				        </mask>
+				        <use fill="#000" xlink:href="#minus"/>
+				        <g fill="#000" mask="url(#minus-m)">
+				            <path d="M-86-87H62V61H-86z"/>
+				        </g>
+				    </g>
+				</svg>
+	    	</a>
+		</div>
+		<ul class="social">
+			<li class="fb">
+				<a href="#" target="_blank" title="שתף בפייסבוק">
+					<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+						<title>Social-icon-26X26px-facebook</title>
+						<desc>Created with Sketch.</desc>
+						<g id="symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="social-copy-2" transform="translate(-17.000000, -51.000000)" fill="#2D3C5A" fill-rule="nonzero">
+								<g id="Group" transform="translate(17.000000, 51.000000)">
+									<path d="M0,13 C0,5.8202979 5.8202979,0 13,0 C20.1797021,0 26,5.8202979 26,13 C26,20.1797021 20.1797021,26 13,26 C5.8202979,26 0,20.1797021 0,13 Z M14.355009,20.6437166 L14.355009,13.5710302 L16.3073797,13.5710302 L16.566111,11.1337433 L14.355009,11.1337433 L14.3583261,9.91385776 C14.3583261,9.27817583 14.4187244,8.93756292 15.3317472,8.93756292 L16.5522899,8.93756292 L16.5522899,6.5 L14.5996428,6.5 C12.2541995,6.5 11.4286643,7.68234636 11.4286643,9.67068115 L11.4286643,11.1340193 L9.96666667,11.1340193 L9.96666667,13.5713062 L11.4286643,13.5713062 L11.4286643,20.6437166 L14.355009,20.6437166 Z" id="Social-icon-26X26px-facebook"></path>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</a>
+			</li>
+			<li class="whats-app">
+				<a href="#" target="_blank" title="שתף בווטסאפ">
+					<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+						<title>Social-icon-26X26px-Whatsapp</title>
+						<desc>Created with Sketch.</desc>
+						<g id="symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="social-copy-2" transform="translate(-17.000000, -100.000000)" fill="#2D3C5A">
+								<g id="Group" transform="translate(17.000000, 51.000000)">
+									<path d="M13.054332,49 C16.5181606,49.0011149 19.7680205,50.3434244 22.212417,52.7783114 C24.6568135,55.2143133 26.0011196,58.4507954 26,61.8935294 C25.9977588,68.9963981 20.1892364,74.7759101 13.0554523,74.7759101 L13.0554523,74.7759101 C10.8832777,74.7747952 8.75367291,74.2340809 6.8626824,73.2083959 L6.8626824,73.2083959 L0,75 L1.83721827,68.3230136 C0.704640422,66.3697526 0.108664739,64.1533811 0.109784994,61.8823807 C0.112025504,54.779512 5.91942765,49 13.054332,49 Z M8.82367376,55.7037037 C8.60196802,55.7037037 8.24356288,55.7811263 7.93914826,56.0876349 C7.63473365,56.3941435 6.77777778,57.1354912 6.77777778,58.6425802 C6.77777778,60.1496692 7.96671789,61.6058501 8.13213564,61.8105427 C8.2975534,62.0141747 10.4709589,65.1068358 13.7976937,66.4336256 C14.5891718,66.7496794 15.2083396,66.9384633 15.6896593,67.0795209 C16.4834348,67.3128492 17.2071375,67.2789105 17.7780585,67.2004274 C18.4156061,67.112399 19.7412456,66.4601402 20.0180906,65.7442464 C20.2937868,65.0283526 20.2937868,64.4153355 20.2110779,64.2880655 C20.1283691,64.1607955 19.9066633,64.0844335 19.5746791,63.9306489 C19.2438436,63.7779249 17.6126407,63.0365771 17.3093748,62.9347611 C17.0049602,62.8318845 16.7832545,62.7809765 16.5626975,63.0874851 C16.3409917,63.3939937 15.7057416,64.0844335 15.5127542,64.2880655 C15.3186181,64.4916975 15.1256307,64.518212 14.7936465,64.3644275 C14.4616622,64.2117035 13.3933392,63.8882255 12.1262852,62.8456721 C11.1406711,62.0332652 10.4744051,61.0299534 10.280269,60.7234448 C10.0872816,60.4169362 10.2607405,60.2504246 10.4261583,60.0987612 C10.5754937,59.9619459 10.7581425,59.7413446 10.924709,59.562106 C11.0901267,59.3828674 11.145266,59.2555974 11.2555445,59.0519654 C11.365823,58.8462122 11.3106838,58.6680342 11.2279749,58.5153102 C11.145266,58.3615256 10.4812975,56.8533761 10.2056013,56.2403589 C9.93564866,55.644311 9.66224988,55.7249154 9.45892389,55.7153701 C9.26593651,55.7058249 9.04423076,55.7037037 8.82367376,55.7037037 Z" id="Social-icon-26X26px-Whatsapp"></path>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</a>
+			</li>
+			<li class="e-mail">
+				<a href="#" title="שלח לחבר">
+					<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+						<title>Social-icon-26X26px-eMail</title>
+						<desc>Created with Sketch.</desc>
+						<g id="symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="social-copy-2" transform="translate(-17.000000, -146.000000)" fill="#2D3C5A" fill-rule="nonzero">
+								<g id="Group" transform="translate(17.000000, 51.000000)">
+									<path d="M13,121 C5.82029825,121 0,115.179702 0,108 C0,100.820298 5.82029825,95 13,95 C20.1797017,95 26,100.820298 26,108 C26,115.179702 20.1797017,121 13,121 Z M13.1811333,107.270388 C14.2455733,107.270388 19.4211333,104.36 19.4211333,104.36 L19.4294533,103.84 C19.4294533,103.26592 18.9635333,102.8 18.3878933,102.8 L7.97437333,102.8 C7.39925333,102.8 6.93333333,103.26592 6.93333333,103.84 L6.93333333,104.30332 C6.93333333,104.30332 12.1655733,107.270388 13.1811333,107.270388 Z M13.1811333,108.700388 C12.1655733,108.700388 6.94113333,105.92 6.94165333,105.92 L6.93333333,112.16 C6.93333333,112.73408 7.39977333,113.2 7.97437333,113.2 L18.3878933,113.2 C18.9635333,113.2 19.4294533,112.73408 19.4294533,112.16 L19.4211333,105.92 C19.4211333,105.92 14.2944533,108.700388 13.1811333,108.700388 Z" id="Social-icon-26X26px-eMail"></path>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</a>
+			</li>
+     	</ul>   
+	</aside>
+</section>
+  <!-- google_ad_section_start -->
+				<!-- Google Snippet for Article.articleBody -->
+				<section itemprop="articleBody" class="article-body">
+				<!-- Google Snippet for Article.wordCount='[content]' -->
+					<span itemprop="wordCount" content="2217"></span>
+          <p>חמש פעמים ביקרתי בסוריה במהלך מלחמת האזרחים, ואפתח באחד הדברים הראשונים שמבין כל מי שנכנס אליה. זה יישמע משפט מוזר, אבל חייבים לפתוח בו כדי להבין משהו יסודי על אודות המדינה שאנו מדברים עליה: אין מדינה כזו "סוריה".</p>
+<p>היא הייתה פעם.&nbsp;אולי היא תשוב להתקיים. אבל הרבה שנים שהיא כבר אינה קיימת. לא קיימת כיחידה אחת. דמיינו שאתם צופים בסרט על חבורות רחוב שמשתלטות על עיר גדולה ומחלקות את העיר לאזורי שליטה. כל חבורה מקבלת טריטוריה משלה, ויש הבנה שקטה וקשוחה של "כבד את הטריטוריה שלי ואני לא אפגע בטריטוריה שלך". כזו הייתה סוריה עד לפני ארבעה חודשים.</p>
+<script src="https://rcs.mako.co.il/js/outbrainInArticle.js"></script>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2025/04/15/GettyImages-2187154696_re_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 id14bd4e42a0836910VgnVCM100000700a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2025/04/15/GettyImages-2187154696_re_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="המורדים בסוריה כובשים את חלב, דצמבר 2024 (צילום: Rami Alsayed, GettyImages)"
+					alt="המורדים בסוריה כובשים את חלב, דצמבר 2024 (צילום: Rami Alsayed, GettyImages)">  		
+				</img><figcaption class="credit">
+<span>אחרי 53 שנות שלטון, אכזרי אסד נפל. המורדים כובשים את חלב</span><span> | </span><span>צילום: 
+							Rami Alsayed, GettyImages</span>
+</figcaption>
+</figure>
+
+<p>גם בתקופה שבשאר אסד עוד שלט בסוריה, בימים "טובים" הוא שלט בכ-65% משטח המדינה הודות לנוכחות של בני בריתו שם &ndash; איראן, חיזבאללה ורוסיה של פוטין. היו טריטוריות של מורדים סונים באזור אידליב, היו טריטוריות עצומות של דאעש, שלאחר תבוסת הארגון הפכו לתאים רדומים, תאים שכעת מתעוררים מחדש. בדרום היו כיסים, עצמאיים פחות או עצמאיים יותר, של הדרוזים. לכורדים בצפון-מזרח המדינה היו שטחים אדירים של כ-30% מגודלה, שטח בגודל פי שלושה ממדינה ישראל, ולא תמצאו בו דגל אחד של סוריה. רק דגלים כורדיים. בהמשך נכנסה טורקיה ופלשה לכמה מאותם שטחים כורדיים, סיפחה אותם, ומאז היא חולמת ופועלת להשיג דומיננטיות על סוריה כולה.</p>
+<p>אם הייתם עומדים בסוריה במקום מסוים ומנסים לגבש דעה על מה זה סוריה, לא בהכרח היה קשר למה שמתרחש קילומטרים ספורים מכם, או לפעמים אפילו במרחק של כמה מאות מטרים.</p>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2023/04/03/SYRIA_asad_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 id7877e40d27647810VgnVCM200000650a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2023/04/03/SYRIA_asad_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="בשאר אל-אסד, נשיא סוריה (צילום: reuters)"
+					alt="בשאר אל-אסד, נשיא סוריה (צילום: reuters)">  		
+				</img><figcaption class="credit">
+<span>שלט בכ-65% משטח המדינה. בשאר אל-אסד</span><span> | </span><span>צילום: 
+							reuters</span>
+</figcaption>
+</figure>
+
+<p>&nbsp;<strong><a href="https://www.mako.co.il/news-n12_magazine?Partner=interlink" target="_blank" rel="noopener">לקריאת כל כתבות מגזין N12 לחצו כאן</a></strong>&nbsp;</p>
+<h3>כלובים ברחוב ושפחות מין</h3>
+<p>התובנה הזו הגיעה באחת הטראומות הגדולות שחוויתי בראשית מלחמת האזרחים. בנובמבר 2012 נכנסתי לסוריה בפעם הראשונה. מורדים סורים שנלחמו נגד אסד הבריחו אותי, מהצד הטורקי של הגבול, לתוך מחוז אידליב. הם כמובן לא ידעו שאני ישראלי, אבל דיברנו על יהודים ועל ישראל, ועל איך שהם לא אוהבים את המשטר בישראל, אבל מעוניינים לדבר עם ישראלים וליצור עתיד חדש. בפנים גלויות הם אמרו למצלמה, "זה כמו אצלנו, בסוריה. המשטר נורא ואיום, אבל רוב האנשים טובים ורוצים שלום. ככה זה גם שם בישראל".</p>
+<span title="ARTICLE1_300X250" id="CM8ShowAd_ARTICLE1_300X250" class="ad b300X250XARTICLE not_for_print"><script type="text/javascript">						
+				googletag.cmd.push(function() { googletag.display('CM8ShowAd_ARTICLE1_300X250'); });						
+			</script></span>
+<p>הם דיברו בין היתר על שאיפתם לדמוקרטיה ועל שוויון זכויות לנשים (אגב, אותה קבוצת מורדים &ndash; צבא סוריה החופשי &ndash; ממשיכה לדבר כך גם כיום), וכשתיעדתי אותם הייתי נרגש מהמחשבה שסוריה שאחרי נפילת אסד תהיה לא פחות מחלום.</p>
+<p>מה שלא ידעתי הוא שקילומטרים ספורים משם, באותו מחוז של אידליב, היה באותו זמן חבר שלי. קולגה. עיתונאי אמריקני ושמו ג'יימס פולי. גם אותו היו מי שהבריחו מטורקיה אל תוך מחוז אידליב בסוריה, ארבעה ימים קודם לכן. ואחר כך הוא נעלם. אף אחד לא הבין איפה הוא.</p>
+<p>עבר זמן עד שהתברר שהוא נחטף בידי ארגון ג'יהאדיסטי לא מוכר, דאעש.&nbsp;אז גם עלתה לרשת התמונה האיומה ההיא. פולי צולם רוכן על ברכיו בתלבושת כתומה של נידונים למוות. לידו ג'יהאדיסט מנופף בסכין ומסביר את האידיאולוגיה של "המדינה האיסלאמית", של דאעש, מאיים להשמיד את כל הכופרים שבתחומי הח'ליפות החדשה ואז עורף לפולי את הראש.</p>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2015/09/17/teomim_3_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 id3a32565f1dadf410VgnVCM2000002a0c10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2015/09/17/teomim_3_i.jpg"
+					width="634"
+					height="388"
+					title="ג'יימס פולי (צילום: מתוך יוטיוב)"
+					alt="ג'יימס פולי (צילום: מתוך יוטיוב)">  		
+				</img><figcaption class="credit">
+<span>נחטף בידי ארגון ג'יהאדיסטי לא מוכר ושמו דאעש. הוצאתו להורג של העיתונאי ג'יימס פולי</span><span> | </span><span>צילום: 
+							מתוך יוטיוב</span>
+</figcaption>
+</figure>
+
+<p>תחשבו על זה. במקום אחד יש אנשים שמדברים בסימפתיה על יהודים, על ישראלים, על זכויות נשים ועל דמוקרטיה מערבית. ובמרחק של 4&ndash;5 ק"מ משם &ndash; בטריטוריה של מיליציה אחרת &ndash; יש כלובים ברחובות. בתוך הכלובים האלה יש נשים שישמשו שפחות מין לג'יהאדיסטים החדשים של דאעש. אותם ג'יהאדיסטים עוברים ליד הכלובים, קונים ומוכרים את אותן נשים, שורפים בני אדם בעודם בחיים ועורפים ראשים של מי שבעיניהם כופרים. לטריטוריה הזו הגיע פולי. שתי הטריטוריות הן סוריה. אבל מה הקשר?</p>
+<p><span style="font-weight: 400;"><div class="infogram-embed" data-id="6f088da2-39ba-46c5-8557-c09194af31f8" data-type="interactive" data-title="MAP MAGAZINE"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script></span></p>
+<h3>אנשים מגיעים לכאן כדי לירוק</h3>
+<p>עד נפילת אסד הקפדתי להיכנס רק לאזורים של המורדים המתונים ושל הכורדים. תמרנתי בסוריה בזהירות כדי שלא להיכנס בטעות לטריטוריה של אסד, כי שם המוח'אבראת, המודיעין המשותף של הסורים, האיראנים וחיזבאללה. הם ידעו מי אני.&nbsp;הכי מחוץ לתחום הייתה כמובן דמשק. היא לא הייתה רק הבירה של סוריה, אלא בירת הציר השיעי, שמחבר את איראן דרך סוריה לחיזבאללה שבדרום לבנון.</p>
+<p>ואז, ב-8 בדצמבר 2024, העולם התהפך.&nbsp;אחרי 53 שנות שלטון, אכזרי ופסיכופתי גם במושגים האיומים של המזרח התיכון, נפל משטר אסד. זה אומר שגם הציר השיעי &ndash; שהשתרע מאיראן, דרך עיראק וסוריה, עד לחיזבאללה שבדרום לבנון, והיה האיום הכי גדול על ישראל מאז קמנו כמדינה &ndash; נפל. כל המוח'אבראת שהיו יכולים לזהות אותי (לא שאני כזה חשוב...) כבר לא היו שם.&nbsp;מבחינתי זו הייתה הזדמנות של פעם בחיים להיכנס לדמשק.</p>
+<p>זה היה הכול ביחד. מפחיד (אולי מישהו בכל זאת יזהה שאני ישראלי), מרגש (זמזמתי לעצמי את השיר "וכשיבוא, יבוא שלום... אז ברכבת ניסע לדמשק" &ndash; גם אם זה לא היה עדיין מחובר למציאות) ובעיקר לא ייאמן.</p>
+<p>ברחוב פאייז מנסור, אחד הרחובות הראשיים בדמשק, התנשאה השגרירות האיראנית. חזית הקיר שפונה לרחוב מרוקעת באומנות פרסית ואיקונוגרפיה של קדושים שיעים, מימי עלי וחוסין של לפני 1,300 שנה ועד לקאסם סולימאני של 2020.</p>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2025/04/15/2024-12-08T083731Z_re_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 idafdb86db5d936910VgnVCM100000700a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2025/04/15/2024-12-08T083731Z_re_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="שגרירות איראן בדמשק (צילום: Firas Makdesi, Reuters)"
+					alt="שגרירות איראן בדמשק (צילום: Firas Makdesi, Reuters)">  		
+				</img><figcaption class="credit">
+<span>פוסטרים קרועים של נסראללה וסולימאני. שגרירות איראן בדמשק אחרי נפילת אסד</span><span> | </span><span>צילום: 
+							Firas Makdesi, Reuters</span>
+</figcaption>
+</figure>
+
+<p>"לא ייאמן", כי המקום הזה היה אחד המוקדים הכי מאובטחים במזרח התיכון. כאן ניהלה איראן את הציר השיעי. מהשגרירות הזו פיקחו על מעבר אמצעי לחימה מהרפובליקה האיסלאמית דרך סוריה לדרום לבנון של חיזבאללה. מכאן הפעילה איראן סוכנים בסוריה ובלבנון, ובמקרים נדירים גם בישראל. מעבר לאבטחה הכבדה מחוץ לשגרירות, גם בתוך הבניין עצמו היו חדרים שלמים שנעולים ככספות, דלתות סודיות שפותחות צוהר לשרתי מחשבים ומסמכים סופר-דיסקרטיים, ועכשיו... עכשיו הכול פרוץ.</p>
+<div xmlns:RequestContext="com.vignette.ext.templating.util.RequestContext" xmlns:moreUtil="com.keshettv.keshetappinfra.app.more.util" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="player-wrap not-for-print">
+<script type="application/ld+json">
+				{
+				"vid":"3964972f1b935910VgnVCM100000700a10acRCRD",
+				"cid":"6a6d777d11485910VgnVCM200000650a10acRCRD",
+				"isNewsChannel":"true",
+				"galleryCid":"9896b09319416910VgnVCM200000650a10acRCRD"
+				}
+				</script>
+<div class="small-player">
+<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen;" frameborder="0" scrolling="no" data-player-embed="player-embed" title="player-embed" loading="lazy" width="100%" height="357" src="/player-embed/index.html?vid=3964972f1b935910VgnVCM100000700a10acRCRD&cid=6a6d777d11485910VgnVCM200000650a10acRCRD&galleryCid=9896b09319416910VgnVCM200000650a10acRCRD&isNewsChannel=true" id="player-embed"></iframe>
+</div>
+</div>
+
+<p>נשענתי על מדף ספרים והוא להפתעתי זז. התברר שזו דלת סודית, והיא הוליכה אותי לחלל שכולו מחשבים ושרתים, דרכונים של פעילים איראנים ואנשי חיזבאללה, מסכות אב"ך ופריטים שהאיראנים לא הצליחו להשמיד לפני שנמלטו מכאן בכל המהירות מפני המורדים שהתקדמו לדמשק.</p>
+<p>זה לא שאני היחיד שגילה את כל ה"אוצרות" האלה. כל מי שרוצה נכנס לשגרירות הזו. כל מי שהיו כאן, האיראנים, אנשי חיזבאללה והעלווים מצבא אסד, נטשו והשאירו הכול פרוץ. אזרחים סורים מגיעים הנה כדי לירוק על השגרירות, לנפץ את החלונות שלה, לדרוך על פוסטרים של נסראללה וח'אמנאי ולקלל אותם.&nbsp;חלק מהם פורצים בבכי. הם מגיעים עם תמונות של בני משפחה שלהם שנרצחו או הועלמו בידי המשטר של אסד ובני חסותו האיראנית.</p>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2025/04/15/posters1504_re_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 iddb4f5387c9836910VgnVCM100000700a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2025/04/15/posters1504_re_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="ח'אמנאי, אסד, נסראללה (צילום: reuters)"
+					alt="ח'אמנאי, אסד, נסראללה (צילום: reuters)">  		
+				</img><figcaption class="credit">
+<span>מכאן ניהלה איראן את הציר השיעי. כרזות של ח'אמנאי ונסראללה בימי שלטון אסד</span><span> | </span><span>צילום: 
+							reuters</span>
+</figcaption>
+</figure>
+
+<h3>אדונים חדשים הגיעו לסוריה</h3>
+<p>צריך להבין, מה שאנחנו ספגנו מחיזבאללה ואיראן לא מתקרב כלל להרג, לעינויים ולתופת שהם הנחילו לאזרחים הסונים של סוריה, שמונים יותר מ-70% מהאוכלוסייה. והינה, מה שלא הצליחו המורדים לעשות ב-13 שנה של מלחמת אזרחים, עלה בידם לחולל ב-11 יום בסך הכול.</p>
+<p>מה שבין היתר סייע להם הוא שישראל הנחילה מכת מחץ על חיזבאללה ועל הנוכחות האיראנית בלבנון ובסוריה, ובנוסף, עצם זה שוולדימיר פוטין, שגונן על אסד כעשור, עסוק, יותר מאי-פעם, בניסיון לנגוס בעוד שטחים של אוקראינה.</p>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2025/04/15/AP22066552442957_re_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 id101a5387c9836910VgnVCM100000700a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2025/04/15/AP22066552442957_re_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="אסד ופוטין (צילום: AP)"
+					alt="אסד ופוטין (צילום: AP)">  		
+				</img><figcaption class="credit">
+<span>נשיא רוסיה היה עסוק באוקראינה מכדי להגן על בן בריתו. אסד ופוטין (ארכיון)</span><span> | </span><span>צילום: 
+							AP</span>
+</figcaption>
+</figure>
+
+<p>יש סיבות נוספות, אבל עובדה אחת נתקבעה: משטר אסד העלווי-שיעי, ששימש ציר מאיראן לדרום לבנון, ובצורה מסוימת סיפק לאיראנים "גבול" עם מדינת ישראל &ndash; נפל. אדונים חדשים הגיעו לסוריה (או לפאזל הזה ששמו סוריה). אבל מי הם בעצם?</p>
+<p>הם ג'יהאדיסטים. קוראים להם היאת תחריר א-שאם &ndash; הארגון לשחרור השאם. "שאם" הוא הכינוי של "סוריה הגדולה" מימי המאה השביעית לספירה. "סוריה הגדולה" כללה את השטח של מה שהיום נקרא סוריה, לבנון, ירדן וישראל. כלומר, מהבחינה הזו, כבר בעצם השם שלהם יש לכאורה סוג של תביעה טריטוריאלית על ישראל. לכאורה, כי הדברים הרבה יותר מורכבים.</p>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2025/03/12/222_3_SYRIA-SECURITY-MILITARY-SHOW_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 id8b9ad02c88a85910VgnVCM200000650a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2025/03/12/222_3_SYRIA-SECURITY-MILITARY-SHOW_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="היאת תחריר א-שאם (צילום: reuters)"
+					alt="היאת תחריר א-שאם (צילום: reuters)">  		
+				</img><figcaption class="credit">
+<span>"שאם" היא "סוריה הגדולה", שכוללת את לבנון, ירדן וישראל. היאת תחריר א-שאם</span><span> | </span><span>צילום: 
+							reuters</span>
+</figcaption>
+</figure>
+
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2017/10/05/921771_I.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 id6e7edf53956ee510VgnVCM100000290c10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2017/10/05/921771_I.jpg"
+					width="634"
+					height="388"
+					title="אל-ג'ולאני. פצוע אנוש? (צילום: וויקיפדיה / wikipedia)"
+					alt="אל-ג'ולאני. פצוע אנוש? (צילום: וויקיפדיה / wikipedia)">  		
+				</img><figcaption class="credit">
+<span>אל-קאעידה של סוריה. אל-ג'ולאני בימיו כמנהיג ג'בהת א-נוסרה</span><span> | </span><span>צילום: 
+							וויקיפדיה / wikipedia</span>
+</figcaption>
+</figure>
+
+<p>בראש הארגון עומד אחמד א-שרע, שעד לניצחון המורדים נודע בכינויו אל-ג'ולאני, כי שני הוריו נולדו בגולן. אל-ג'ולאני פיקד על אחד הפלגים הדומיננטיים במרד הסורי &ndash; ג'בהת א-נוסרה. ובלי להיכנס לתרגום של השם, מדובר באל-קאעידה של סוריה. אגב, לפני שהתקבע בג'בהת א-נוסרה, זגזג אל-ג'ולאני בין הארגונים הג'יהאדיסטיים של אל-קאעידה ודאעש. הוא היה ידיד טוב של אבו בכר אל-בגדאדי, שארה"ב הציעה בזמנו פרס של 10 מיליון דולר למי שייתן קצה חוט שיסייע ללכוד אותו.</p>
+<p>את הג'יהאדיסטים האלה כבר פגשתי כמה פעמים במהלך מלחמת האזרחים של סוריה.&nbsp;כמובן התאפשר לי לדבר איתם רק כשהיו נתונים בשבי של הכוחות הכורדיים או מורדים אחרים שאיתם עמדתי בקשר. הם דיברו למצלמה בצורה מפורשת על הרעיון של השבת הח'ליפות האיסלאמית. אחד מהם סיפר שערף 70 ראשים, אחר הדגיש שהוא משתמש בכוונה בסכין קהה, כדי להסב יותר סבל לקורבן.</p>
+<p>כשצילמתי את אותם ג'יהאדיסטים חשבתי על פולי ואיך שערפו לו את הראש. השתדלתי אז שלא יראו את זה בצילום, אבל היד שלי רעדה. כי גם כשניצבים מולם פנים אל פנים קשה להאמין שזה אמיתי. אנחנו לא יודעים אם אחמד א-שרע בעצמו ביצע זוועות כאלה, אבל מי שכן עשו אותן בהחלט היו בסביבתו.</p>
+<h3>האם ג'יהאדיסט יכול להשתנות?</h3>
+<p>אז מה קורה פה? האם אלה האנשים שתופסים את השלטון בסוריה? סליחה, אבל שוב, זה מורכב יותר. כבר לפני תשע שנים החליט א-שרע לנטוש את דרך הג'יהאד. אפשר לפקפק בזה, ואפשר לתת בו אמון, אבל הוא מצידו התנכר לדאעש ולאל-קאעידה. בימי מלחמת האזרחים הוא ניהל את הטריטוריה של המורדים באידליב ביד קשה אבל לא בשום מאפיינים של ג'יהאד. עד כמה שאפשר, בגיהינום של סוריה, הוא הצליח למשול שם באופן די יעיל. גם בכלכלה.</p>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2025/03/10/julani10032_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 idadcae6838d085910VgnVCM200000650a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2025/03/10/julani10032_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="אבו מוחמד אל ג'ולאני (צילום: reuters)"
+					alt="אבו מוחמד אל ג'ולאני (צילום: reuters)">  		
+				</img><figcaption class="credit">
+<span>במשך שנים שמו הילך אימים. אחמד א-שרע</span><span> | </span><span>צילום: 
+							reuters</span>
+</figcaption>
+</figure>
+
+<p>הוא מאוד כריזמטי ופקודות שלו חלחלו תמיד דרך כל דרגי הפיקוד. ועכשיו הוא השליט של סוריה, ולפחות כלפי חוץ הוא מדבר נורא יפה. כמו כל ג'יהאדיסט אחר, במשך שנים שמו הילך אימים על נוצרים, כורדים, יהודים, עלווים ודרוזים &ndash; אבל כעת הוא מחמיא לעצי אשוח של חג המולד, לפיתות של הדרוזים, לפילוסופיה היהודית ולתרבות הכורדית ומבהיר לעולם שזה היופי האמיתי של סוריה &ndash; הגיוון הדתי והתרבותי שלה. זה ההפך המוחלט מהאמונה הבסיסית של כל ג'יהאדיסט שרואה בכל מי שאינו כמוהו בדיוק כופר הראוי למוות.</p>
+<p>גם כישראלי בסוריה חוויתי תגובות מפתיעות. כמובן לא הזדהיתי כישראלי אלא כנתין של המדינה שהנפיקה את הדרכון הזר שברשותי, אבל דיברתי על יחסי סוריה וישראל עם לוחמים של תחריר א-שאם ולא שמעתי שום משפט נאצה. הרושם שלי היה שזה נוסח שממש הוכתב להם מלמעלה &ndash; לא לדבר רעות על ישראל. אולי מתוך כוונה ליצור רושם מרגיע בעולם המערבי ואולי בגלל שהם רוצים להזדהות עם מה שרוב הציבור הסורי מרגיש.</p>
+<p>אחרי 13 שנות מלחמת אזרחים ויותר מחצי מיליון הרוגים, אנשים פה רוצים לנסות משהו אחר. משהו חדש. הם לא מאמינים לשום דבר שהטיפו לו בני משפחת אסד, ומשום כך גם מפקפקים ב"רוע" של ישראל שחונכו עליו. בסוריה הזו של אחמד א-שרע גם יצאה הוראה מפורשת שלא להשתמש יותר בצירופים "הישות הציונית" או "הישות הכובשת" אלא רק בצמד המילים "מדינת ישראל".</p>
+<p>&nbsp;</p><script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2025/04/15/MIDEAST-CRISIS-SYRIA_re_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 id6bad9d2f30a36910VgnVCM100000700a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2025/04/15/MIDEAST-CRISIS-SYRIA_re_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="סוריה מלחמת אזרחים 2018 (צילום: Bassam Khabieh, Reuters)"
+					alt="סוריה מלחמת אזרחים 2018 (צילום: Bassam Khabieh, Reuters)">  		
+				</img><figcaption class="credit">
+<span>תקיפה אווירית של כוחות אסד בעיירה הנצורה דומא. ההרס במלחמת האזרחים (ארכיון) </span><span> | </span><span>צילום: 
+							Bassam Khabieh, Reuters</span>
+</figcaption>
+</figure>
+
+<p>מבחינה זו, כמי שהיה בסוריה, יש לי כישראלי תחושת פספוס על כך שהתגובה הישראלית היא להשתלט על עוד אדמות סוריות ולא להיענות לשום רמז של פיוס. מובן שאנחנו צריכים להשמיד את ארסנל כלי הלחימה שקיים בסוריה ופוטנציאלית מאיים עלינו, בין שהוא בידי האיראנים ואסד ובין שהוא בידי הג'יהאד הסוני, גם אם מנהיג המדינה מציג עצמו באופן שונה בתכלית ומדבר על כך שישראל אינה אויב. אבל לא לתת אפילו הזדמנות למשהו חדש? משהו שברגעים אלה מאמינים בו רוב הסורים, שמצידם רוצים לראות איך תגיב ישראל בחזרה?</p>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2025/03/30/35e21a12-c4c1-454e-aadd-733d5a9d0a51_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 id94423e89546e5910VgnVCM100000700a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2025/03/30/35e21a12-c4c1-454e-aadd-733d5a9d0a51_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="כוח במרחב (צילום: דובר צה&#34ל)"
+					alt="כוח במרחב (צילום: דובר צה&#34ל)">  		
+				</img><figcaption class="credit">
+<span>צריך להשמיד את ארסנל הנשק, אבל גם לתת הזדמנות. כוח צה"ל בחרמון הסורי</span><span> | </span><span>צילום: 
+							דובר צה"ל</span>
+</figcaption>
+</figure>
+
+<p>אפשר להבין את התהייה של מי ששואלים, "איך בכלל יכול להיות שג'יהאדיסט ישתנה?" מבחינתם של מרבית האנשים, בטח ישראלים, זה הבל הבלים. בעיניהם אחמד א-שרע הוא "ג'יהאדיסט בחליפה". עמוק בפנים הוא אותו עורף ראשים צמא דם שמנסה להרדים את העולם במילים יפות עד שיקנה אחיזה איתנה במנגנוני הכוח של סוריה ואז ייצא לעוד ג'יהאד.</p>
+<p>אני יודע שדעתי האישית לא תהיה מקובלת על רבים, אבל כמו שאני רואה את זה, אחמד א-שרע הוא אדם שיכול להשתנות. כמה סיבות לכך: מרגע שהפך לאיש החזק בסוריה נוהרים אליו מנהיגי קטאר וערב הסעודית עם תועפות של כסף והבטחות לבנייה מחדש של המדינה. גם האירופים ואפילו האמריקנים מחזרים אחריו. בשורה התחתונה, אחמד א-שרע נושם כעת רעיון אחר של חיים.</p>
+<p>הוא אדם אינטליגנטי. במהלך 15 השנים האחרונות הוא ראה מה קורה למי שהלכו "ראש בקיר" בדרך הג'יהאד וכיצד התרסקו בעיראק ובלוב. אני מאמין שהוא יכול להשתנות. מה שאני מאמין בו פחות הוא שהחיילים שלו, לפחות חלקם הגדול, יכולים להשתנות גם הם. חלק מהג'יהאדיסטים מסוגלים איכשהו לחיות עם המחמאות לנוצרים והכורדים והדרוזים, אבל חלק ניכר מהם חש שהג'יהאד שהם מאמינים בו בכל נימי נשמתם, ושלמענו נלחמו שנים ארוכות ואיבדו רבים מאחיהם, נמכר כעת בזול ונזרק לפח.</p>
+<p>הם רואים את הממשלה החדשה שעליה הכריז א-שרע לפני שבוע. יש בה שר עלווי ויש נוצרי, ויש כורדי ויש דרוזי, ויש גם אישה נוצרייה, שלא תהיה מחויבת לעטות חיג'אב. ואל מול העולם המערבי הדמוקרטי שמריע הם חשים מרומים. משום כך, בשבועות האחרונים ישנם מקרב הלוחמים שפורשים מתחריר א-שאם ומקימים זרועות לחימה עצמאיות בתקווה שיצליחו ליישם את הג'יהאד בדרכים אחרות.</p>
+<h3>משהו היסטורי מתרחש בסוריה</h3>
+<p>בשבועות האחרונים אני שומע עליהם מהחברים החדשים שלי בסוריה. עד הנסיעה האחרונה, הסורים שעמדו איתי בקשר היו בעיקר כורדים, מורדים סונים ודרוזים. מטבע הדברים לא הייתי בקשר עם העלווים של אסד, לפחות לא אלה שהיו מזוהים עם משטרו.</p>
+<p>כרגע, בעקבות הסרט האחרון שלי מדמשק, והפרסום לטוב ולרע שהוא קיבל בסוריה ובעולם הערבי, אני מקבל לא מעט תגובות ופניות מעלווים, בעיקר נשים, ממחוז לטקיה והסביבה שבה פעלה משפחת אסד. הם מצלמים לי את השכונה שלהם. גוויות של עשרות בני אדם, כולם עלווים שיעים, בעיקר גברים צעירים, אבל גם קשישים, נשים וילדים, מוטלות על המדרכה, בגני משחקים, בפרדסים ובתוך הבתים עצמם.</p>
+<p>הטבח הזה, של יותר מ-2,000 נפש בחודש וחצי האחרון, הוא מעשה ידיהם של אותם ג'יהאדיסטים סונים מתחריר א-שאם. לא רק סורים, אלא בעיקר לוחמים זרים שלא אכפת להם כהוא זה מעתידה של סוריה. והקריאה של העלווים והעלוויות שאני מקבל היא "ישראל, בבקשה תעזרו לנו".</p>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2025/04/15/3_SYRIA-SECURITY-JABLEH_re_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 idf5e59d2f30a36910VgnVCM100000700a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2025/04/15/3_SYRIA-SECURITY-JABLEH_re_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="הטבח בעלווים (צילום: Karam al-Masri, Reuters)"
+					alt="הטבח בעלווים (צילום: Karam al-Masri, Reuters)">  		
+				</img><figcaption class="credit">
+<span>יותר מ-2,000 נרצחו. תושב ג'בלה חוזר לביתו לאחר הטבח בעלווים</span><span> | </span><span>צילום: 
+							Karam al-Masri, Reuters</span>
+</figcaption>
+</figure>
+
+<p>אין גבול לתהפוכות שהמזרח התיכון ממשיך לספק לנו. והכול עדיין ממשיך להתרחש. הכי מסוכן בימים אלה הוא לשמוע לפרשן נחרץ או גוף חשיבה אקדמי שמתפתים לקריאה הכנה של כולנו לקבל תשובה &ndash; מה יהיה בסוריה? הניסיון של השנים האחרונות הוכיח שאף אחד לא יודע כלום.</p>
+<p>תחשבו על זה, שמעתם פרשן או פרשנית שחזו את המהפכות בעולם הערבי? שמעתם על גוף אקדמי שחזה את עליית דאעש ורעיון "הח'ליפות האיסלאמית" יוצא לפועל? הרי דאעש בעצמו לא חזה שיהיה אימתני כמו שהפך להיות. כמו שגם המודיעין הכי טוב בעולם לא צפה את 7 באוקטובר ולא האמין למה שקרה.</p>
+<p>משהו היסטורי מתרחש בסוריה.&nbsp;המדינה שהייתה הכי קריטית לציר השיעי שהאיראנים טוו, כדי להגיע מאיראן עד חיזבאללה ולחמש אותו באופן שיסייע להגשים את הרעיון למחוק את ישראל &ndash; המדינה הזו כבר לא שלהם. סוריה שונאת את איראן וחיזבאללה לא פחות מאיתנו. יש שם רעיונות חדשים. אפשר לפקפק בכולם. ואפשר לנסות, בפעם הראשונה, לדבר.</p>
+<script type="application/ld+json">
+		{
+  		"@context": "https://schema.org",
+  		"@type": "ImageObject",
+  		"url":"https://img.mako.co.il/2024/07/30/Uvda2018_19_240518_VOD_autoOrient_i.jpg",
+  		"width":"634",
+  		"height":"388"
+		}
+		</script>
+<figure class="w634x388 id89f14fd20aef0910VgnVCM200000650a10acRCRD"><img
+					loading="lazy"
+					src="https://img.mako.co.il/2024/07/30/Uvda2018_19_240518_VOD_autoOrient_i.jpg"
+					width="634"
+					height="388"
+					title="איתי אנגל (צילום: עובדה, קשת 12)"
+					alt="איתי אנגל (צילום: עובדה, קשת 12)">  		
+				</img><figcaption class="credit">
+<span>איתי אנגל</span><span> | </span><span>צילום: 
+							עובדה, קשת 12</span>
+</figcaption>
+</figure>
+<ul class="tags">
+<li>
+<a href="/Tagit/%D7%90%D7%97%D7%9E%D7%93+%D7%90-%D7%A9%D7%A8%D7%A2?partner=articletagit">אחמד א-שרע</a>
+</li>
+<li>
+<a href="/Tagit/%D7%91%D7%A9%D7%90%D7%A8+%D7%90%D7%9C+%D7%90%D7%A1%D7%93?partner=articletagit">בשאר אל אסד</a>
+</li>
+<li>
+<a href="/Tagit/%D7%A1%D7%95%D7%A8%D7%99%D7%94?partner=articletagit">סוריה</a>
+</li>
+</ul>
+<label class="not-for-print" for="box-trigger"><span>מצאתם טעות לשון?</span></label>
+</section>
+				<!-- google_ad_section_end --><section class="footer not-for-print">
+				<!-- source logo-->
+<div dir="rtl" class="not_for_print sourceAbout">
+	
+		</div>
+	<section id="vote"  data-inview data-vote-type data-element-name="feelback"  class="not_for_print">
+                        <div class="feelingsWrapper" id="feelingsWrapper">
+                        </div>
+                </section>
+				
+			<button class="go-to-comments not-for-print">
+						<span></span>
+						<span class="hover"></span>
+						<p class="content">	
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="17" viewBox="0 0 16 17">
+								<defs>
+									<path id="comments" d="M7 13l-3.488 3.488A.3.3 0 0 1 3 16.276V13h-.2A2.8 2.8 0 0 1 0 10.2V2.8A2.8 2.8 0 0 1 2.8 0h10.4A2.8 2.8 0 0 1 16 2.8v7.4a2.8 2.8 0 0 1-2.8 2.8H7zM3.5 4a.5.5 0 0 0 0 1h9a.5.5 0 1 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 1 0 0-1h-9z"/>
+								</defs>
+								<g fill="none" fill-rule="evenodd">
+									<mask id="comments-m" fill="#fff">
+										<use xlink:href="#comments"/>
+									</mask>
+									<use fill="#00AEEF" fill-rule="nonzero" xlink:href="#comments"/>
+									<g fill="#000" mask="url(#comments-m)">
+										<path d="M-70-72H78V76H-70z"/>
+									</g>
+								</g>
+							</svg>
+									לתגובות
+						</p>
+					</button>
+				</section>
+		</article>
+		<div class="outbrain-wrap not-for-print">
+			<script>
+      var pageUrl = "";
+      var isMako = document.location.href.indexOf(".mako.co.il") !== -1;
+      var isTech12 = document.location.href.indexOf(".tech12.co.il") !== -1;
+
+      if (isMako) {
+        pageUrl = "https://www.mako.co.il" + window.location.pathname;
+      }
+      if (isTech12) {
+        pageUrl = "https://www.tech12.co.il" + window.location.pathname;
+      }
+      document.write('<div class="OUTBRAIN" data-src=' +pageUrl+' data-widget-id="CR_1"><\/div>');
+    </script>
+
+  </div>
+		<div class="talkbacks-wrap not-for-print"></div>
+		</div>
+    <footer>
+	<div class="wrapper">
+	<div class="icons">
+		<a data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://www.n12.co.il"} class="news12_logo" href="https://www.n12.co.il">
+			<img src="https://rcs.mako.co.il/images/svg/news/logo-n-12-footer.svg" alt="N12 חדשות">
+		</a>
+		<a class="twitter" href="https://twitter.com/N12News" target="_blank"></a>
+		<a class="instagram" href="https://www.instagram.com/n12news/" target="_blank"></a>
+		<a class="facebook" href="https://www.facebook.com/N12News/" target="_blank"></a>
+	</div>
+	<ul class="flex-container" style="clear:both;">
+	<li>
+				<span>חדשות</span>
+		<ul class="all_helpfullinks">
+		<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"45af43ad8df07110VgnVCM100000290c10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"45af43ad8df07110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-military"}><a href="/news-military?partner=NewsfooterLinks" >ביטחוני</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"abc7f3226147b610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"abc7f3226147b610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-politics"}><a href="/news-politics?partner=NewsfooterLinks" >פוליטי</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"a52cb2eb226bb110VgnVCM100000290c10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"a52cb2eb226bb110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-law"}><a href="/news-law?partner=NewsfooterLinks" >פלילי</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"338cc3bdc7f26110VgnVCM1000005201000aRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"338cc3bdc7f26110VgnVCM1000005201000aRCRD","clicked_item_url":"https://www.mako.co.il/news-israel"}><a href="/news-israel?partner=NewsfooterLinks" >בארץ</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"dbfcc3bdc7f26110VgnVCM1000005201000aRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"dbfcc3bdc7f26110VgnVCM1000005201000aRCRD","clicked_item_url":"https://www.mako.co.il/news-world"}><a href="/news-world?partner=NewsfooterLinks" >בעולם</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"368b5b651147b610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"368b5b651147b610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-education"}><a href="/news-education?partner=NewsfooterLinks" >חינוך</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"5fdf43ad8df07110VgnVCM100000290c10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"5fdf43ad8df07110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-columns"}><a href="/news-columns?partner=NewsfooterLinks" >פרשנות</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"adbcb2eb226bb110VgnVCM100000290c10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"adbcb2eb226bb110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money"}><a href="/news-money?partner=NewsfooterLinks" >כלכלה</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"d0289dfc85dab610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"d0289dfc85dab610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-sport"}><a href="/news-sport?partner=NewsfooterLinks" >ספורט</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"9eeefd8e5656b610VgnVCM100000700a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"9eeefd8e5656b610VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-entertainment"}><a href="/news-entertainment?partner=NewsfooterLinks" >תרבות</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"5550fd8e5656b610VgnVCM100000700a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"5550fd8e5656b610VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-lifestyle"}><a href="/news-lifestyle?partner=NewsfooterLinks" >בריאות</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e021fd8e5656b610VgnVCM100000700a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e021fd8e5656b610VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-digital"}><a href="/news-digital?partner=NewsfooterLinks" >דיגיטל</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"637fa599b2ba7710VgnVCM100000700a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"637fa599b2ba7710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-podcast_n12/one_a_day"}><a href="https://www.mako.co.il/news-podcast_n12/one_a_day?partner=NewsfooterLinks" >אחד ביום</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"e71eeda1962ba810VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e71eeda1962ba810VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money/tech12"}><a href="https://www.mako.co.il/news-money/tech12?partner=NewsfooterLinks" >TECH12</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"37c39138919c7710VgnVCM100000700a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"37c39138919c7710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-science"}><a href="https://www.mako.co.il/news-science?partner=NewsfooterLinks" >מדע וסביבה</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"fdccb2eb226bb110VgnVCM100000290c10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"fdccb2eb226bb110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money/consumer"}><a href="https://www.mako.co.il/news-money/consumer?partner=NewsfooterLinks" >צרכנות</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":3,"click_type":"link","clicked_item_id":"69a63ec2549a6710VgnVCM100000700a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"69a63ec2549a6710VgnVCM100000700a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-money/real_estate"}><a href="https://www.mako.co.il/news-money/real_estate?partner=NewsfooterLinks" >נדל"ן</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"4caece3418897110VgnVCM1000005201000aRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"4caece3418897110VgnVCM1000005201000aRCRD","clicked_item_url":"https://www.mako.co.il/news-weather"}><a href="https://www.mako.co.il/news-weather?partner=NewsfooterLinks" >תחזית מזג האוויר</a></li>
+					<li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://makospecial.co.il/Women_violence?makoOpenChromeTabs=1"}><a href="https://makospecial.co.il/Women_violence?makoOpenChromeTabs=1&partner=NewsfooterLinks" target="_blank">אלימות נגד נשים</a></li>
+					<li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://specialprojects.mako.co.il/Road_Accidents?makoOpenChromeTabs=1"}><a href="https://specialprojects.mako.co.il/Road_Accidents?makoOpenChromeTabs=1&partner=NewsfooterLinks" target="_blank">תאונות דרכים בישראל</a></li>
+					</ul>
+		</li>
+		<li>
+				<span>תוכניות חדשות 12</span>
+		<ul class="all_helpfullinks">
+		<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12?subChannelId=91ea5bf310cfc610VgnVCM100000700a10acRCRD"}><a href="/news-channel12?subChannelId=91ea5bf310cfc610VgnVCM100000700a10acRCRD&partner=NewsfooterLinks" >סדר עולמי</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12?subChannelId=1a03dc0540cfc610VgnVCM100000700a10acRCRD"}><a href="/news-channel12?subChannelId=1a03dc0540cfc610VgnVCM100000700a10acRCRD&partner=NewsfooterLinks" >תוכנית חיסכון</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12?subChannelId=75f651b92fbfc610VgnVCM100000700a10acRCRD"}><a href="/news-channel12?subChannelId=75f651b92fbfc610VgnVCM100000700a10acRCRD&partner=NewsfooterLinks" >שש עם</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12?subChannelId=17d45d19cebfc610VgnVCM100000700a10acRCRD"}><a href="/news-channel12?subChannelId=17d45d19cebfc610VgnVCM100000700a10acRCRD&partner=NewsfooterLinks" >אולפן שישי</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12?subChannelId=5445fcf6e2cfc610VgnVCM100000700a10acRCRD"}><a href="/news-channel12?subChannelId=5445fcf6e2cfc610VgnVCM100000700a10acRCRD&partner=NewsfooterLinks" >פגוש את העיתונות</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12?subChannelId=35e7ec884d0fc610VgnVCM200000650a10acRCRD"}><a href="/news-channel12?subChannelId=35e7ec884d0fc610VgnVCM200000650a10acRCRD&partner=NewsfooterLinks" >המהדורה המרכזית</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12?subChannelId=bdb5acc8b2cfc610VgnVCM100000700a10acRCRD"}><a href="/news-channel12?subChannelId=bdb5acc8b2cfc610VgnVCM100000700a10acRCRD&partner=NewsfooterLinks" >חמש עם רפי רשף</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12?subChannelId=3c07e8468fbfc610VgnVCM100000700a10acRCRD"}><a href="/news-channel12?subChannelId=3c07e8468fbfc610VgnVCM100000700a10acRCRD&partner=NewsfooterLinks" >מהדורה ראשונה</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12?subChannelId=4064b3866ebfc610VgnVCM100000700a10acRCRD"}><a href="/news-channel12?subChannelId=4064b3866ebfc610VgnVCM100000700a10acRCRD&partner=NewsfooterLinks" >חדשות סוף השבוע</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":2,"click_type":"link","clicked_item_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"e30cc13e751fc610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-channel12?subChannelId=2d68775b26694710VgnVCM200000650a10acRCRD"}><a href="/news-channel12?subChannelId=2d68775b26694710VgnVCM200000650a10acRCRD&partner=NewsfooterLinks" >מהדורת היום</a></li>
+					<li ><a href="" ></a></li>
+					</ul>
+		</li>
+		<li>
+				<span>הגדרות</span>
+		<ul class="all_helpfullinks settings">
+		<li data-domo-click={"content_type":"Article","channel_depth":2,"click_type":"link","clicked_item_id":"d37908dd1674c110VgnVCM2000002a0c10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"345705dfcebcb110VgnVCM2000002a0c10acRCRD","clicked_item_url":"https://www.mako.co.il/help-terms-of-use/Article-d37908dd1674c11006.htm"}><a href="https://www.mako.co.il/help-terms-of-use/Article-d37908dd1674c11006.htm?partner=NewsfooterLinks" target="_blank">תנאי שימוש</a></li>
+					<li data-domo-click={"content_type":"Article","channel_depth":2,"click_type":"link","clicked_item_id":"d37908dd1674c110VgnVCM2000002a0c10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"345705dfcebcb110VgnVCM2000002a0c10acRCRD","clicked_item_url":"https://www.mako.co.il/help-terms-of-use/Article-d37908dd1674c11006.htm"}><a href="https://www.mako.co.il/help-terms-of-use/Article-d37908dd1674c11006.htm?partner=NewsfooterLinks" target="_blank">מדיניות פרטיות</a></li>
+					<li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://www.mako.co.il/collab/N12_Contact.html"}><a href="https://www.mako.co.il/collab/N12_Contact.html?partner=NewsfooterLinks" target="_blank">צור קשר</a></li>
+					<li data-domo-click={"content_type":"channel","channel_depth":0,"click_type":"link","clicked_item_id":"3d385dd2dd5d4110VgnVCM100000290c10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"3d385dd2dd5d4110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.ilmailto:mail@ch2news.co.il"}><a href="mailto:mail@ch2news.co.il?partner=NewsfooterLinks" target="_blank">המייל האדום</a></li>
+					<li data-domo-click={"content_type":"Article","channel_depth":3,"click_type":"link","clicked_item_id":"2cc76c5fee850710VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"04ee6a690395f610VgnVCM200000650a10acRCRD","clicked_item_url":"https://www.mako.co.il/news-israel/2020_q1/Article-2cc76c5fee85071026.htm"}><a href="/news-israel/2020_q1/Article-2cc76c5fee85071026.htm?partner=NewsfooterLinks" target="_blank">אודות</a></li>
+					<li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://www.mako-publishers.com/n12"}><a href="https://www.mako-publishers.com/n12?partner=NewsfooterLinks" target="_blank">פרסמו אצלנו</a></li>
+					<li data-domo-click={"content_type":"unknown","channel_depth":-1,"click_type":"link","clicked_item_id":"unknown","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"unknown","clicked_item_url":"https://wa.me/972502010818"}><a href="https://wa.me/972502010818?partner=NewsfooterLinks" >לפנייה ב-WhatsApp</a></li>
+					<li data-domo-click={"content_type":"Article","channel_depth":2,"click_type":"link","clicked_item_id":"b7ff18a9de864710VgnVCM200000650a10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"5bb6bf4ccf39c110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il/help-5bb6bf4ccf39c110/Article-b7ff18a9de86471026.htm"}><a href="https://www.mako.co.il/help-5bb6bf4ccf39c110/Article-b7ff18a9de86471026.htm?partner=NewsfooterLinks" >הסדרי נגישות</a></li>
+					</ul>
+		</li>
+		<li class="last">
+		<div class="footer_logos">
+			<a class="acum_logo" href="https://acum.org.il/?partner=NewsFooterLinks" target="_blank"><img src="https://rcs.mako.co.il/images/news/acumlogo-svg-2x.png" alt="אקו&quot;ם"/></a>
+			<a data-domo-click={"content_type":"channel","channel_depth":0,"click_type":"link","clicked_item_id":"3d385dd2dd5d4110VgnVCM100000290c10acRCRD","referring_component":"ddbff363b1e1f610VgnVCM100000700a10acRCRD","clicked_channel_id":"3d385dd2dd5d4110VgnVCM100000290c10acRCRD","clicked_item_url":"https://www.mako.co.il"} class="mako_logo" href="https://www.mako.co.il/?partner=NewsFooterLinks"><img src="https://rcs.mako.co.il/images/news/mako-logo.png" alt="מאקו"/></a>
+		</div>
+	</li>
+	</ul>
+			
+	</div>							
+</footer>
+<script src="https://rcs.mako.co.il/js/polyfill.js"></script>
+	<script src="https://rcs.mako.co.il/js/news/article/jsBundle.js"></script>
+
+	<script src="/player-embed/embed/resize.js"></script>
+	<script src="/player-embed/embed/pictureInPicture.js"></script>
+	<script src="/player-embed/embed/iframeMessageMiddleware.js"></script>
+	
+	<div id="mkSync"></div> 
+<script src="https://rcs.mako.co.il/js/scripts/thirdParty.js"></script>
+<script async="async" src="https://widgets.outbrain.com/outbrain.js"></script>
+
+<script>
+			if(currentChannelId=="b18a04870ceb5310VgnVCM2000002a0c10acRCRD" 
+					|| currentChannelId=="a8a3ddbd634e6310VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="b8e3cdcf53124410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="4dd8ed58288c6410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="23fa3444bccc6410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="7ab876c796cc6410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="96a85ac28dcc6410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="8c377cbc0a38a310VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="f6b217757d02b410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="2d8ece65b1cfd410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="aa66a725a0cfd410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="03c5ce65b1cfd410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="4caece3418897110VgnVCM1000005201000aRCRD"
+					|| currentChannelId=="de1c3e46457c3510VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="c44f38bf962ca510VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="b998eefbad817510VgnVCM2000002a0c10acRCRD"){
+				window.isLinicomActive && (function(){
+					  var e=document.createElement('script');
+					  e.async=true; e.type='text/javascript';
+					  e.src=document.location.protocol+"null";
+					  var me = document.getElementsByTagName('script')[0];
+					  me.parentNode.insertBefore(e, me);
+					})();
+			}
+			else if(vcmidOfContent != currentChannelId)
+			{
+				window.isLinicomActive && (function(){
+				  var e=document.createElement('script');
+				  e.async=true; e.type='text/javascript';
+				  e.src=document.location.protocol+"//linicom.co.il/links/convert_90.js";
+				  var me = document.getElementsByTagName('script')[0];
+				  me.parentNode.insertBefore(e, me);
+				})();
+			}
+			else
+			{
+				window.isLinicomActive && (function(){
+					  var e=document.createElement('script');
+					  e.async=true; e.type='text/javascript';
+					  e.src=document.location.protocol+"//linicom.co.il/links/convert_10.js";
+					  var me = document.getElementsByTagName('script')[0];
+					  me.parentNode.insertBefore(e, me);
+				})();
+				
+			}
+		</script>
+	<script>
+		
+		window.isSekindoActive  && !document.querySelector('meta[name=shatap]') && (function(){
+			  	var e=document.createElement('script');
+			  	e.async=true; e.type='text/javascript';
+			 	e.src=document.location.protocol+"//live.sekindo.com/live/liveView.php?s=57232&subId=DEFAULT";
+			  	var me = document.getElementsByTagName('script')[0];
+			  	me.parentNode.insertBefore(e, me);
+			})();
+		</script>
+	<script type="text/javascript">
+		var myImages=new Array();
+		var myIndex = 0;
+		function sendUrl4Statistic(url)
+		{
+			if (document.images) 
+			{
+				myImages[myIndex]=new Image;
+				myImages[myIndex].src=url;
+				myIndex++;
+			}
+			else
+			{
+				document.write('<IMG ALT="" BORDER="0" NAME="MYStatistics" WIDTH="1" HEIGHT="1" SRC="'+url+'" style="display:none;">');
+			}
+		}
+		var replaceFrom = '&';
+		var replaceBy = "zzzzz";
+		var statsDomainName =  'https://stats.mako.co.il';
+		var statsDomainPrefix = statsDomainName; 
+		var currentUrl = location.href;
+		currentUrl = currentUrl.replace( new RegExp(replaceFrom,'g'), replaceBy);
+
+		if(!window.isClickUrlReported){
+			sendUrl4Statistic(statsDomainName+'/ClicksStatistics/clickUrl.jsp?clickURL='+encodeURIComponent(currentUrl));
+		}
+		
+		</script>
+	<!-- ver -->
+</body>
+</html>
+<!-- page:include-page urlContext="/vgn-ext-templating" pagePath="/in_line/trackDependencies.jsp"/-->
