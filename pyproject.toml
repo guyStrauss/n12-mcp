@@ -49,3 +49,9 @@ ignore = [
     "TD003",
     "FIX002", # too verbose descriptions of todos
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "requests-mock>=1.12.1",
+]

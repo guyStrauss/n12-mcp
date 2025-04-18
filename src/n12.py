@@ -1,9 +1,11 @@
 import re
+from http import HTTPStatus
 
 import bs4
 import requests
 from bs4 import BeautifulSoup
 from loguru import logger
+from pydantic import HttpUrl
 
 from models import ArticleEntry
 
@@ -17,8 +19,12 @@ PARTIAL_ENTRIES = 2
 
 def get_main_page() -> list[ArticleEntry]:
     results = []
-    with requests.get(URL, timeout=30) as response:
-        soup = BeautifulSoup(response.content, "html.parser")
+
+    response = requests.get(URL, timeout=30)
+    if response.status_code != HTTPStatus.OK:
+        return []
+
+    soup = BeautifulSoup(response.content, "html.parser")
     articles = soup.find("ul", {"class": MAIN_ARTICLES})
     if not articles:
         logger.error("Something went wrong while parsing page")
@@ -54,3 +60,12 @@ def get_main_page() -> list[ArticleEntry]:
             )
         )
     return results
+
+
+def read_article(article_url: str | HttpUrl) -> str:
+    response = requests.get(article_url, timeout=30)
+    if response.status_code != HTTPStatus.OK:
+        return "Something Went Wrong"
+    soup = BeautifulSoup(response.content, "html.parser")
+    texts = soup.find_all("p")
+    return "\n".join([paragraph.text for paragraph in texts])
