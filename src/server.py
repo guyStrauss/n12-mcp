@@ -18,5 +18,4 @@ def read_article(article_url: str | HttpUrl) -> str:
 
 
 if __name__ == "__main__":
-    a = list_articles()
-    read_article(a[0].url)
+    mcp.run(transport="stdio")
