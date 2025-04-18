@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 from loguru import logger
 
-from src.models import ArticleEntry
+from models import ArticleEntry
 
 URL = "https://www.n12.co.il"
 MAIN_ARTICLES = "grid-ordering main1"

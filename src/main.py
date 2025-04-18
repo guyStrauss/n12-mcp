@@ -1,7 +1,7 @@
 from mcp.server.fastmcp import FastMCP
 
-from src import n12
-from src.models import ArticleEntry
+import n12
+from models import ArticleEntry
 
 mcp = FastMCP("N12-News")
 
